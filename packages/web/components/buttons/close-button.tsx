@@ -18,6 +18,11 @@ export const CloseButton: FunctionComponent<
       if (!disabled) onClick();
     }}
   >
-    <Image alt="clear" src="/icons/close.svg" height={22} width={18} />
+    <Image
+      alt="clear"
+      src="https://app.osmosis.zone/icons/close.svg"
+      height={22}
+      width={18}
+    />
   </div>
 );

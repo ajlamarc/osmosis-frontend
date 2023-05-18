@@ -375,7 +375,7 @@ const SuperfluidBreakdownRow: FunctionComponent<BondDuration["superfluid"]> = ({
             className="rounded-full"
             alt="validator icon"
             src={validatorLogoUrl ?? "/icons/superfluid-osmo.svg"}
-            fallbacksrc="/icons/profile.svg"
+            fallbacksrc="https://app.osmosis.zone/icons/profile.svg"
             height={20}
             width={20}
           />

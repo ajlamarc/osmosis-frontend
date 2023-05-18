@@ -25,7 +25,9 @@ export const AssetNameCell: FunctionComponent<Partial<Cell>> = ({
           <Image
             alt="star"
             onClick={onToggleFavorite}
-            src={`/icons/star${isFavorite ? "-filled" : ""}.svg`}
+            src={`https://app.osmosis.zone/icons/star${
+              isFavorite ? "-filled" : ""
+            }.svg`}
             height={24}
             width={24}
           />

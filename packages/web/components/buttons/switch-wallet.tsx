@@ -20,7 +20,7 @@ export const SwitchWalletButton: FunctionComponent<
     />
     <Image
       alt="switch icon"
-      src="/icons/left-right.svg"
+      src="https://app.osmosis.zone/icons/left-right.svg"
       height={14}
       width={14}
     />

@@ -7,7 +7,7 @@ const Custom500: NextPage = () => {
   return (
     <div className="flex h-screen items-center justify-center gap-3 bg-osmoverse-900">
       <Image
-        src="/icons/error-x.svg"
+        src="https://app.osmosis.zone/icons/error-x.svg"
         alt={t("505.title")}
         height={25}
         width={25}

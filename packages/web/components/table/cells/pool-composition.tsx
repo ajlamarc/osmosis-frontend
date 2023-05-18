@@ -39,7 +39,7 @@ export const PoolCompositionCell: FunctionComponent<
         {stableswapPool && (
           <Image
             alt=""
-            src="/icons/stableswap-pool.svg"
+            src="https://app.osmosis.zone/icons/stableswap-pool.svg"
             width={24}
             height={24}
           />

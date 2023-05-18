@@ -68,7 +68,7 @@ const TransferButton: FunctionComponent<{
       <div className="w-fit shrink-0">
         <Image
           alt="external transfer link"
-          src="/icons/external-link.svg"
+          src="https://app.osmosis.zone/icons/external-link.svg"
           height={13}
           width={13}
         />

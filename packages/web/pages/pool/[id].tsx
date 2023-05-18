@@ -442,7 +442,7 @@ const Pool: FunctionComponent = observer(() => {
                   <div className="body2 text-gradient-positive flex items-center gap-1.5">
                     <Image
                       alt=""
-                      src="/icons/stableswap-pool.svg"
+                      src="https://app.osmosis.zone/icons/stableswap-pool.svg"
                       height={24}
                       width={24}
                     />

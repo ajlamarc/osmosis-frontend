@@ -71,7 +71,7 @@ export function useConnectWalletModalRedirect(
           <h6 className="flex items-center gap-3">
             <Image
               alt="wallet"
-              src="/icons/wallet.svg"
+              src="https://app.osmosis.zone/icons/wallet.svg"
               height={24}
               width={24}
             />

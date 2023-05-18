@@ -86,7 +86,7 @@ export const PoolsOverview: FunctionComponent<
       <div className="absolute right-0 -bottom-[0.025rem] h-[212px] overflow-clip rounded-br-[32px] 1.5xl:h-[200px] xl:h-[188px] md:h-[100px] xs:hidden">
         <Image
           alt="lab machine"
-          src="/images/lab-machine.svg"
+          src="https://app.osmosis.zone/images/lab-machine.svg"
           height={
             width < Breakpoint.MD
               ? 100
@@ -117,7 +117,7 @@ export const PoolsOverview: FunctionComponent<
             {t("pools.createPool.title")}
             <Image
               alt="right arrow"
-              src="/icons/arrow-right-wosmongton-100.svg"
+              src="https://app.osmosis.zone/icons/arrow-right-wosmongton-100.svg"
               height={24}
               width={24}
             />

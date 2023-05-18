@@ -152,7 +152,7 @@ const TxHashDisplayCell: FunctionComponent<
       {truncateString(value, isMobile ? 4 : 8)}{" "}
       <Image
         alt="external link"
-        src="/icons/link-deco.svg"
+        src="https://app.osmosis.zone/icons/link-deco.svg"
         width={12}
         height={12}
       />
@@ -178,7 +178,7 @@ const StatusDisplayCell: FunctionComponent<
         <div className="h-6 w-6 animate-spin">
           <Image
             alt="loading"
-            src="/icons/loading-blue.svg"
+            src="https://app.osmosis.zone/icons/loading-blue.svg"
             width={24}
             height={24}
           />
@@ -194,7 +194,7 @@ const StatusDisplayCell: FunctionComponent<
         <div className="flex items-center gap-2">
           <Image
             alt="success"
-            src="/icons/check-circle.svg"
+            src="https://app.osmosis.zone/icons/check-circle.svg"
             width={24}
             height={24}
           />
@@ -207,7 +207,7 @@ const StatusDisplayCell: FunctionComponent<
           <div className="h-6 w-6 animate-spin">
             <Image
               alt="loading"
-              src="/icons/loading-blue.svg"
+              src="https://app.osmosis.zone/icons/loading-blue.svg"
               width={24}
               height={24}
             />
@@ -218,7 +218,12 @@ const StatusDisplayCell: FunctionComponent<
     case "refunded":
       return (
         <div className="flex items-center gap-2">
-          <Image alt="failed" src="/icons/error-x.svg" width={24} height={24} />
+          <Image
+            alt="failed"
+            src="https://app.osmosis.zone/icons/error-x.svg"
+            width={24}
+            height={24}
+          />
           <span className="md:hidden">{t("assets.historyTable.refunded")}</span>
         </div>
       );
@@ -228,7 +233,7 @@ const StatusDisplayCell: FunctionComponent<
           <div className="h-6 w-6 animate-spin">
             <Image
               alt="loading"
-              src="/icons/loading-blue.svg"
+              src="https://app.osmosis.zone/icons/loading-blue.svg"
               width={24}
               height={24}
             />
@@ -241,7 +246,12 @@ const StatusDisplayCell: FunctionComponent<
     case "failed":
       return (
         <div className="flex items-center gap-2">
-          <Image alt="failed" src="/icons/error-x.svg" width={24} height={24} />
+          <Image
+            alt="failed"
+            src="https://app.osmosis.zone/icons/error-x.svg"
+            width={24}
+            height={24}
+          />
           <span className="md:hidden">
             {reason
               ? t("assets.historyTable.failedWithReason", {

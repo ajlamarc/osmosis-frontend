@@ -51,7 +51,7 @@ export const PoolAssetsIcon: FunctionComponent<Props> = ({
               />
             ) : (
               <img
-                src="/icons/question-mark.svg"
+                src="https://app.osmosis.zone/icons/question-mark.svg"
                 alt="no token icon"
                 width={size === "md" ? 50 : 40}
                 height={size === "md" ? 50 : 40}

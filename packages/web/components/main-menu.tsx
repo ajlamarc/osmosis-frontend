@@ -98,8 +98,8 @@ export const MainMenu: FunctionComponent<{
                       <Image
                         src={
                           IS_FRONTIER
-                            ? "/icons/link-deco-white.svg"
-                            : "/icons/link-deco.svg"
+                            ? "https://app.osmosis.zone/icons/link-deco-white.svg"
+                            : "https://app.osmosis.zone/icons/link-deco.svg"
                         }
                         alt="link"
                         width={12}

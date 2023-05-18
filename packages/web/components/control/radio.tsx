@@ -49,7 +49,12 @@ export const Radio: FunctionComponent<Props> = ({
               disabled ? "opacity-38 cursor-default" : null
             )}
           >
-            <Image alt="" src="/icons/dot.svg" height={20} width={20} />
+            <Image
+              alt=""
+              src="https://app.osmosis.zone/icons/dot.svg"
+              height={20}
+              width={20}
+            />
           </div>
         )}
         <input

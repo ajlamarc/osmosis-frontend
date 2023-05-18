@@ -156,8 +156,8 @@ module.exports = {
     backgroundImage: {
       none: "none",
       "home-bg-pattern": IS_FRONTIER
-        ? "url('/images/osmosis-home-bg-pattern-frontier.svg')"
-        : "url('/images/osmosis-home-bg-pattern.svg')",
+        ? "url('https://app.osmosis.zone/images/osmosis-home-bg-pattern-frontier.svg')"
+        : "url('https://app.osmosis.zone/images/osmosis-home-bg-pattern.svg')",
       "loading-bar":
         "linear-gradient(to left,rgba(251, 251, 251, 0.1),rgba(251, 251, 251, 0.2),rgba(251, 251, 251, 0.3),rgba(251, 251, 251, 0.2),rgba(251, 251, 251, 0.1))",
       superfluid: "linear-gradient(90deg, #8A86FF 0.04%, #E13CBD 99.5%)",

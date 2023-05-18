@@ -129,7 +129,7 @@ export const PageList: FunctionComponent<Props> = ({
           {isEditingText ? (
             <Image
               alt="accept"
-              src="/icons/checkmark-circle.svg"
+              src="https://app.osmosis.zone/icons/checkmark-circle.svg"
               height={22}
               width={22}
             />

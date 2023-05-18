@@ -27,7 +27,7 @@ export const ArrowButton = forwardRef<
       {props.children}
       <Image
         alt="earn more"
-        src="/icons/arrow-right.svg"
+        src="https://app.osmosis.zone/icons/arrow-right.svg"
         height={24}
         width={24}
       />

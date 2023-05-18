@@ -869,7 +869,7 @@ export const TradeClipboard: FunctionComponent<{
                   <Image
                     width={isMobile ? 16 : 20}
                     height={isMobile ? 16 : 20}
-                    src={"/icons/down-arrow.svg"}
+                    src={"https://app.osmosis.zone/icons/down-arrow.svg"}
                     alt="switch"
                   />
                 </div>
@@ -885,7 +885,7 @@ export const TradeClipboard: FunctionComponent<{
                   <Image
                     width={isMobile ? 16 : 20}
                     height={isMobile ? 16 : 20}
-                    src={"/icons/swap.svg"}
+                    src={"https://app.osmosis.zone/icons/swap.svg"}
                     alt="switch"
                   />
                 </div>
@@ -1017,7 +1017,7 @@ export const TradeClipboard: FunctionComponent<{
                     showPriceImpactWarning ? "opacity-100" : "opacity-0"
                   )}
                   alt="alert circle"
-                  src="/icons/alert-circle.svg"
+                  src="https://app.osmosis.zone/icons/alert-circle.svg"
                   height={24}
                   width={24}
                 />

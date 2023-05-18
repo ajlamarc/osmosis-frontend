@@ -58,8 +58,8 @@ const Home: NextPage = observer(function () {
           <g>
             {!IS_FRONTIER && (
               <ProgressiveSvgImage
-                lowResXlinkHref="/images/osmosis-home-bg-low.png"
-                xlinkHref="/images/osmosis-home-bg.png"
+                lowResXlinkHref="https://app.osmosis.zone/images/osmosis-home-bg-low.png"
+                xlinkHref="https://app.osmosis.zone/images/osmosis-home-bg.png"
                 x="56"
                 y="220"
                 width="578.7462"
@@ -69,13 +69,13 @@ const Home: NextPage = observer(function () {
             <ProgressiveSvgImage
               lowResXlinkHref={
                 IS_FRONTIER
-                  ? "/images/osmosis-cowboy-woz-low.png"
-                  : "/images/osmosis-home-fg-low.png"
+                  ? "https://app.osmosis.zone/images/osmosis-cowboy-woz-low.png"
+                  : "https://app.osmosis.zone/images/osmosis-home-fg-low.png"
               }
               xlinkHref={
                 IS_FRONTIER
-                  ? "/images/osmosis-cowboy-woz.png"
-                  : "/images/osmosis-home-fg.png"
+                  ? "https://app.osmosis.zone/images/osmosis-cowboy-woz.png"
+                  : "https://app.osmosis.zone/images/osmosis-home-fg.png"
               }
               x={IS_FRONTIER ? "-100" : "61"}
               y={IS_FRONTIER ? "100" : "682"}

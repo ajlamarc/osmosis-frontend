@@ -1,14 +1,24 @@
-import React, { FunctionComponent, useEffect, useRef, useState } from "react";
-import { observer } from "mobx-react-lite";
-import { useStore } from "./index";
 import { getKeplrFromWindow, WalletStatus } from "@keplr-wallet/stores";
-import { useKeplr } from "../hooks";
 import { KeplrWalletConnectV1 } from "@keplr-wallet/wc-client";
+import { observer } from "mobx-react-lite";
+import React, {
+  FunctionComponent,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
+
+import { TomeContext } from "~/pages/_app";
+
+import { useKeplr } from "../hooks";
 import { useAmplitudeAnalytics } from "../hooks/use-amplitude-analytics";
+import { useStore } from "./index";
 
 /** Manages the initialization of the Osmosis account. */
 export const AccountInitManagement: FunctionComponent = observer(
   ({ children }) => {
+    const kv = useContext(TomeContext);
     const { chainStore, accountStore } = useStore();
     const { setUserProperty } = useAmplitudeAnalytics();
 
@@ -35,20 +45,24 @@ export const AccountInitManagement: FunctionComponent = observer(
     // Init Osmosis account w/ desired connection type (wallet connect, extension)
     // if prev connected Keplr in this browser.
     useEffect(() => {
-      if (typeof localStorage !== "undefined") {
-        const value = localStorage.getItem("account_auto_connect");
-        if (value) {
-          if (value === "wallet-connect") {
-            keplr.setDefaultConnectionType("wallet-connect");
-          } else {
-            keplr.setDefaultConnectionType("extension");
+      const autoConnect = async () => {
+        if (typeof kv !== "undefined") {
+          const value = await kv.get("account_auto_connect");
+          if (value) {
+            if (value === "wallet-connect") {
+              keplr.setDefaultConnectionType("wallet-connect");
+            } else {
+              keplr.setDefaultConnectionType("extension");
+            }
+            account.init();
+            setUserProperty("isWalletConnected", true);
+            // @ts-ignore
+            setUserProperty("connectedWallet", value);
           }
-          account.init();
-          setUserProperty("isWalletConnected", true);
-          setUserProperty("connectedWallet", value);
         }
-      }
-    }, []);
+      };
+      autoConnect();
+    }, [account, keplr, kv, setUserProperty]);
 
     const listenWCDisconnectEventOnce = useRef(false);
     useEffect(() => {

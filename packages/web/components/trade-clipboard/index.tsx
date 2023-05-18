@@ -27,6 +27,7 @@ import {
   useTradeTokenInConfig,
   useWindowSize,
 } from "../../hooks";
+import walletIcon from "../../public/icons/wallet.svg";
 import { useStore } from "../../stores";
 import { Icon } from "../assets";
 import { Button } from "../buttons";
@@ -1155,12 +1156,7 @@ export const TradeClipboard: FunctionComponent<{
               )
             ) : (
               <h6 className="flex items-center gap-3">
-                <Image
-                  alt="wallet"
-                  src="/icons/wallet.svg"
-                  height={24}
-                  width={24}
-                />
+                <Image alt="wallet" src={walletIcon} height={24} width={24} />
                 {t("connectWallet")}
               </h6>
             )}

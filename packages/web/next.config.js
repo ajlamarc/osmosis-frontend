@@ -1,8 +1,28 @@
 /** @type {import('next').NextConfig} */
 const config = {
-  reactStrictMode: true,
+  target: "serverless",
+  basePath: "/apps/osmosis",
+  compress: false,
+  generateBuildId: async () => {
+    return "glob-friendly-id";
+  },
+  distDir: "build",
+  reactStrictMode: false,
   images: {
     domains: ["app.osmosis.zone"],
+    unoptimized: true,
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/:osmosis([a-z0-9-]+\\:0x[a-fA-F0-9]{40})/:path*",
+        destination: "/apps/osmosis/:path*?osmosis=:osmosis",
+      },
+      {
+        source: "/:path*",
+        destination: "/apps/osmosis/:path*",
+      },
+    ];
   },
   webpack(config) {
     /**
@@ -30,4 +50,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
 
-module.exports = withBundleAnalyzer(config);
+const withTM = require("next-transpile-modules")(["@holium/tome-db"]);
+
+module.exports = withTM(withBundleAnalyzer(config));

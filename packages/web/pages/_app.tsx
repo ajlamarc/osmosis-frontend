@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import "react-toastify/dist/ReactToastify.css"; // some styles overridden in globals.css
 
+import Tome, { KeyValueStore } from "@holium/tome-db";
+import { Urbit } from "@urbit/http-api";
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
 import relativeTime from "dayjs/plugin/relativeTime";
@@ -9,7 +11,8 @@ import utc from "dayjs/plugin/utc";
 import { enableStaticRendering } from "mobx-react-lite";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { useMemo } from "react";
+import Script from "next/script";
+import { createContext, useEffect, useMemo, useState } from "react";
 import {
   setDefaultLanguage,
   setTranslations,
@@ -49,7 +52,44 @@ const DEFAULT_LANGUAGE = "en";
 setTranslations({ en });
 setDefaultLanguage(DEFAULT_LANGUAGE);
 
+export const TomeContext = createContext<KeyValueStore | undefined>(undefined);
+
 function MyApp({ Component, pageProps }: AppProps) {
+  const [kv, setKv] = useState<KeyValueStore>();
+
+  const generateKV = async () => {
+    const api = new Urbit(
+      "http://localhost:8080",
+      "lidlut-tabwed-pillex-ridrup",
+      "osmosis"
+    );
+    api.ship = "zod";
+    console.error(api.ship);
+    // await api.poke({
+    //   app: 'osmosis',
+    //   mark: 'tome-action',
+    //   json: {
+    //     'init-tome': {
+    //       ship: '~zod',
+    //       space: 'our',
+    //       app: 'all',
+    //     },
+    //   },
+    //   onError: (error) => {
+    //     console.error(error)
+    //   },
+    // })
+    const db = await Tome.init(api, undefined, {
+      agent: "osmosis",
+    });
+    const _kv = await db.keyvalue();
+    setKv(_kv);
+  };
+
+  useEffect(() => {
+    generateKV();
+  }, []);
+
   const t = useTranslation();
   const menus = useMemo(() => {
     let m: MainLayoutMenu[] = [
@@ -117,31 +157,36 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useAmplitudeAnalytics({ init: true });
   return (
-    <GetKeplrProvider>
-      <StoreProvider>
-        <Head>
-          {/* metamask Osmosis app icon */}
-          <link
-            rel="shortcut icon"
-            href={`${
-              typeof window !== "undefined" ? window.origin : ""
-            }/osmosis-logo-wc.png`}
-          />
-          <link rel="preload" as="image/svg+xml" href={spriteSVGURL} />
-        </Head>
-        <OgpMeta />
-        <IbcNotifier />
-        <ToastContainer
-          toastStyle={{
-            backgroundColor: IS_FRONTIER ? "#2E2C2F" : "#2d2755",
-          }}
-          transition={Bounce}
-        />
-        <MainLayout menus={menus}>
-          <Component {...pageProps} />
-        </MainLayout>
-      </StoreProvider>
-    </GetKeplrProvider>
+    <>
+      <Script src="/session.js" />
+      <TomeContext.Provider value={kv}>
+        <GetKeplrProvider>
+          <StoreProvider>
+            <Head>
+              {/* metamask Osmosis app icon */}
+              <link
+                rel="shortcut icon"
+                href={`${
+                  typeof window !== "undefined" ? window.origin : ""
+                }/osmosis-logo-wc.png`}
+              />
+              <link rel="preload" as="image/svg+xml" href={spriteSVGURL} />
+            </Head>
+            <OgpMeta />
+            <IbcNotifier />
+            <ToastContainer
+              toastStyle={{
+                backgroundColor: IS_FRONTIER ? "#2E2C2F" : "#2d2755",
+              }}
+              transition={Bounce}
+            />
+            <MainLayout menus={menus}>
+              <Component {...pageProps} />
+            </MainLayout>
+          </StoreProvider>
+        </GetKeplrProvider>
+      </TomeContext.Provider>
+    </>
   );
 }
 

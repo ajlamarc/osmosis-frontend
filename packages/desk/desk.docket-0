@@ -1,0 +1,9 @@
+:~  title+'Osmosis'
+    info+'Interchain liquidity lab.'
+    color+0xce.bef0
+    version+[0 1 0]
+    website+'https://osmosis.zone/'
+    license+'MIT'
+    glob-ames+[~zod 0v0]
+    base+'osmosis'
+==

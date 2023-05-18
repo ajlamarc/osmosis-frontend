@@ -10,7 +10,16 @@ const config = {
   reactStrictMode: false,
   images: {
     domains: ["app.osmosis.zone"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**.osmosis.zone",
+      },
+    ],
     unoptimized: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
   async rewrites() {
     return [

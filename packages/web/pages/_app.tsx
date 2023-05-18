@@ -12,7 +12,7 @@ import { enableStaticRendering } from "mobx-react-lite";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
-import { createContext, useEffect, useMemo, useState } from "react";
+import { createContext, useEffect, useMemo, useState, useContext } from "react";
 import {
   setDefaultLanguage,
   setTranslations,
@@ -54,41 +54,32 @@ setDefaultLanguage(DEFAULT_LANGUAGE);
 
 export const TomeContext = createContext<KeyValueStore | undefined>(undefined);
 
+const api = new Urbit(
+  "http://localhost:8080",
+  "lidlut-tabwed-pillex-ridrup",
+  "osmosis"
+);
+api.ship = "zod";
+
 function MyApp({ Component, pageProps }: AppProps) {
   const [kv, setKv] = useState<KeyValueStore>();
 
   const generateKV = async () => {
-    const api = new Urbit(
-      "http://localhost:8080",
-      "lidlut-tabwed-pillex-ridrup",
-      "osmosis"
-    );
-    api.ship = "zod";
     console.error(api.ship);
-    // await api.poke({
-    //   app: 'osmosis',
-    //   mark: 'tome-action',
-    //   json: {
-    //     'init-tome': {
-    //       ship: '~zod',
-    //       space: 'our',
-    //       app: 'all',
-    //     },
-    //   },
-    //   onError: (error) => {
-    //     console.error(error)
-    //   },
-    // })
     const db = await Tome.init(api, undefined, {
       agent: "osmosis",
     });
     const _kv = await db.keyvalue();
-    setKv(_kv);
+    console.error(_kv);
+    // TODO: setting causes infinite loading and then crash. why?
+    // setKv(_kv);
   };
 
-  useEffect(() => {
-    generateKV();
-  }, []);
+  // useEffect(() => {
+  //   // if (typeof kv === "undefined") {
+  //     generateKV();
+  //   // }
+  // }, []);
 
   const t = useTranslation();
   const menus = useMemo(() => {
@@ -96,22 +87,22 @@ function MyApp({ Component, pageProps }: AppProps) {
       {
         label: t("menu.swap"),
         link: "/",
-        icon: "/icons/trade-white.svg",
-        iconSelected: "/icons/trade-white.svg",
+        icon: "https://app.osmosis.zone/icons/trade-white.svg",
+        iconSelected: "https://app.osmosis.zone/icons/trade-white.svg",
         selectionTest: /\/$/,
       },
       {
         label: t("menu.pools"),
         link: "/pools",
-        icon: "/icons/pool-white.svg",
-        iconSelected: "/icons/pool-white.svg",
+        icon: "https://app.osmosis.zone/icons/pool-white.svg",
+        iconSelected: "https://app.osmosis.zone/icons/pool-white.svg",
         selectionTest: /\/pools/,
       },
       {
         label: t("menu.assets"),
         link: "/assets",
-        icon: "/icons/asset-white.svg",
-        iconSelected: "/icons/asset-white.svg",
+        icon: "https://app.osmosis.zone/icons/asset-white.svg",
+        iconSelected: "https://app.osmosis.zone/icons/asset-white.svg",
         selectionTest: /\/assets/,
       },
     ];
@@ -120,7 +111,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       m.push({
         label: "Bootstrap",
         link: "/bootstrap",
-        icon: "/icons/pool-white.svg",
+        icon: "https://app.osmosis.zone/icons/pool-white.svg",
         selectionTest: /\/bootstrap/,
       });
     }
@@ -129,19 +120,19 @@ function MyApp({ Component, pageProps }: AppProps) {
       {
         label: t("menu.stake"),
         link: "https://wallet.keplr.app/chains/osmosis",
-        icon: "/icons/ticket-white.svg",
+        icon: "https://app.osmosis.zone/icons/ticket-white.svg",
         amplitudeEvent: [EventName.Sidebar.stakeClicked] as AmplitudeEvent,
       },
       {
         label: t("menu.vote"),
         link: "https://wallet.keplr.app/chains/osmosis?tab=governance",
-        icon: "/icons/vote-white.svg",
+        icon: "https://app.osmosis.zone/icons/vote-white.svg",
         amplitudeEvent: [EventName.Sidebar.voteClicked] as AmplitudeEvent,
       },
       {
         label: t("menu.info"),
         link: "https://info.osmosis.zone",
-        icon: "/icons/chart-white.svg",
+        icon: "https://app.osmosis.zone/icons/chart-white.svg",
         amplitudeEvent: [EventName.Sidebar.infoClicked] as AmplitudeEvent,
       },
       {

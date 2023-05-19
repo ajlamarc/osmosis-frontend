@@ -6,6 +6,7 @@ import { useTranslation } from "react-multi-lang";
 import { Icon } from "../../assets";
 import { Button } from "../../buttons";
 import { AssetCell as Cell } from "./types";
+import loader from "../../../loader";
 
 export const TransferButtonCell: FunctionComponent<
   {
@@ -67,8 +68,9 @@ const TransferButton: FunctionComponent<{
       {label}
       <div className="w-fit shrink-0">
         <Image
+          loader={loader}
           alt="external transfer link"
-          src="https://app.osmosis.zone/icons/external-link.svg"
+          src="/icons/external-link.svg"
           height={13}
           width={13}
         />

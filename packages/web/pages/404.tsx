@@ -1,13 +1,15 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { useTranslation } from "react-multi-lang";
+import loader from "../loader";
 
 const Custom404: NextPage = () => {
   const t = useTranslation();
   return (
     <div className="flex h-screen items-center justify-center gap-3 bg-osmoverse-900">
       <Image
-        src="https://app.osmosis.zone/icons/warning.svg"
+        loader={loader}
+        src="/icons/warning.svg"
         alt={t("404.title")}
         height={25}
         width={25}

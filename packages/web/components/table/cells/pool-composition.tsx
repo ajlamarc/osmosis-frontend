@@ -5,6 +5,7 @@ import { useTranslation } from "react-multi-lang";
 
 import { PoolAssetsIcon, PoolAssetsName } from "../../assets";
 import { BaseCell } from "..";
+import loader from "../../../loader";
 
 export interface PoolCompositionCell extends BaseCell {
   poolId: string;
@@ -38,8 +39,9 @@ export const PoolCompositionCell: FunctionComponent<
         </div>
         {stableswapPool && (
           <Image
+            loader={loader}
             alt=""
-            src="https://app.osmosis.zone/icons/stableswap-pool.svg"
+            src="/icons/stableswap-pool.svg"
             width={24}
             height={24}
           />

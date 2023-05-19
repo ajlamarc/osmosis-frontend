@@ -10,6 +10,7 @@ import { TokenSelect } from "../../../control";
 import { InputBox } from "../../../input";
 import { StepBase } from "./step-base";
 import { StepProps } from "./types";
+import loader from "../../../../loader";
 
 export const Step1SetRatios: FunctionComponent<StepProps> = observer(
   (props) => {
@@ -100,8 +101,9 @@ export const Step1SetRatios: FunctionComponent<StepProps> = observer(
           >
             <div className="ml-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-wosmongton-500 md:h-6 md:w-6">
               <Image
+                loader={loader}
                 alt="add"
-                src="https://app.osmosis.zone/icons/add.svg"
+                src="/icons/add.svg"
                 height={isMobile ? 12 : 15}
                 width={isMobile ? 12 : 15}
               />

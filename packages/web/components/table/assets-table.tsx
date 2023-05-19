@@ -33,6 +33,7 @@ import {
 } from "./cells";
 import { TransferHistoryTable } from "./transfer-history";
 import { ColumnDef } from "./types";
+import loader from "../../loader";
 
 interface Props {
   nativeBalances: CoinBalance[];
@@ -448,6 +449,7 @@ export const AssetsTable: FunctionComponent<Props> = observer(
                   {assetData.coinImageUrl && (
                     <div className="flex w-10 shrink-0 items-center">
                       <Image
+                        loader={loader}
                         alt="token icon"
                         src={assetData.coinImageUrl}
                         height={40}

@@ -30,7 +30,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "osmosis",
               coinGeckoId: "usd-coin",
-              coinImageUrl: "https://app.osmosis.zone/tokens/osmo.svg",
+              coinImageUrl: "/tokens/osmo.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -45,7 +45,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "ion",
               coinGeckoId: "usd-coin",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ion.svg",
+              coinImageUrl: "/tokens/ion.svg",
             } /*
           ...(IS_TESTNET
             ? [
@@ -54,7 +54,7 @@ const chainInfos = IS_TESTNET
                   coinMinimalDenom:
                     "factory/osmo13t90mkyvdnmn9wm8hfen6jk3hnlt8uqx8savlvjd5xghy5z6ye2qymy6cy/uibcx",
                   coinDecimals: 6,
-                  coinImageUrl: "https://app.osmosis.zone/tokens/ibcx.svg",
+                  coinImageUrl: "/tokens/ibcx.svg",
                 },
               ]
             : []),*/,
@@ -80,7 +80,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "cosmos",
               coinGeckoId: "usd-coin",
-              coinImageUrl: "https://app.osmosis.zone/tokens/atom.svg",
+              coinImageUrl: "/tokens/atom.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -110,7 +110,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "akash-network",
               coinGeckoId: "usd-coin",
-              coinImageUrl: "https://app.osmosis.zone/tokens/akt.svg",
+              coinImageUrl: "/tokens/akt.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -140,7 +140,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "juno-network",
               coinGeckoId: "usd-coin",
-              coinImageUrl: "https://app.osmosis.zone/tokens/juno.svg",
+              coinImageUrl: "/tokens/juno.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -169,7 +169,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "umars",
               coinDecimals: 6,
               coinGeckoId: "usd-coin",
-              coinImageUrl: "https://app.osmosis.zone/tokens/mars.svg",
+              coinImageUrl: "/tokens/mars.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -197,7 +197,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "STAKE",
               coinMinimalDenom: "ustake",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/stake.svg",
+              coinImageUrl: "/tokens/stake.svg",
               coinGeckoId: "pool:ustake",
               isStakeCurrency: true,
             },
@@ -205,7 +205,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "nUSDC",
               coinMinimalDenom: "uusdc",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/usdc.svg",
+              coinImageUrl: "/tokens/usdc.svg",
               coinGeckoId: "usd-coin",
               isFeeCurrency: true,
               gasPriceStep: {
@@ -234,7 +234,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "unls",
               coinDecimals: 6,
               coinGeckoId: "usd-coin",
-              coinImageUrl: "https://app.osmosis.zone/tokens/nolus.svg",
+              coinImageUrl: "/tokens/nolus.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -262,7 +262,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "KYVE",
               coinMinimalDenom: "tkyve",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/kyve.svg",
+              coinImageUrl: "/tokens/kyve.svg",
               coinGeckoId: "usd-coin",
               isStakeCurrency: true,
               isFeeCurrency: true,
@@ -297,7 +297,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "osmosis",
               coinGeckoId: "pool:uosmo",
-              coinImageUrl: "https://app.osmosis.zone/tokens/osmo.svg",
+              coinImageUrl: "/tokens/osmo.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -312,7 +312,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "ion",
               coinGeckoId: "pool:uion",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ion.svg",
+              coinImageUrl: "/tokens/ion.svg",
             } /*
         ...(IS_TESTNET
           ? [
@@ -321,7 +321,7 @@ const chainInfos = IS_TESTNET
                 coinMinimalDenom:
                   "factory/osmo13t90mkyvdnmn9wm8hfen6jk3hnlt8uqx8savlvjd5xghy5z6ye2qymy6cy/uibcx",
                 coinDecimals: 6,
-                coinImageUrl: "https://app.osmosis.zone/tokens/ibcx.svg",
+                coinImageUrl: "/tokens/ibcx.svg",
               },
             ]
           : []),*/,
@@ -347,7 +347,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "cosmos",
               coinGeckoId: "pool:uatom",
-              coinImageUrl: "https://app.osmosis.zone/tokens/atom.svg",
+              coinImageUrl: "/tokens/atom.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -376,7 +376,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "terra-luna",
               coinGeckoId: "pool:ulunc",
-              coinImageUrl: "https://app.osmosis.zone/tokens/lunc.svg",
+              coinImageUrl: "/tokens/lunc.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -391,7 +391,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "terrausd",
               coinGeckoId: "pool:uustc",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ust.svg",
+              coinImageUrl: "/tokens/ust.svg",
               isFeeCurrency: true,
               gasPriceStep: {
                 low: 0.75,
@@ -405,7 +405,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "ukrw",
               coinDecimals: 6,
               coinGeckoId: "terra-krw",
-              coinImageUrl: "https://app.osmosis.zone/tokens/krt.svg",
+              coinImageUrl: "/tokens/krt.svg",
               pegMechanism: "algorithmic",
             },
           ],
@@ -429,7 +429,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "secret",
               coinGeckoId: "pool:uscrt",
-              coinImageUrl: "https://app.osmosis.zone/tokens/scrt.svg",
+              coinImageUrl: "/tokens/scrt.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -447,7 +447,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               //coinGeckoId: "alter",
               coinGeckoId: "pool:alter",
-              coinImageUrl: "https://app.osmosis.zone/tokens/alter.svg",
+              coinImageUrl: "/tokens/alter.svg",
             },
             {
               type: "cw20",
@@ -457,7 +457,7 @@ const chainInfos = IS_TESTNET
                 "cw20:secret1s09x2xvfd2lp2skgzm29w2xtena7s8fq98v852:AMBER",
               coinDecimals: 6,
               // coinGeckoId: "amber",
-              coinImageUrl: "https://app.osmosis.zone/tokens/amber.svg",
+              coinImageUrl: "/tokens/amber.svg",
             },
             {
               type: "cw20",
@@ -467,7 +467,7 @@ const chainInfos = IS_TESTNET
                 "cw20:secret1yxcexylwyxlq58umhgsjgstgcg2a0ytfy4d9lt:BUTT",
               coinDecimals: 6,
               coinGeckoId: "button",
-              coinImageUrl: "https://app.osmosis.zone/tokens/butt.svg",
+              coinImageUrl: "/tokens/butt.svg",
             },
             {
               type: "cw20",
@@ -478,7 +478,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 8,
               //coinGeckoId: "shade-protocol",
               coinGeckoId: "pool:shdold",
-              coinImageUrl: "https://app.osmosis.zone/tokens/shdold.svg",
+              coinImageUrl: "/tokens/shdold.svg",
             },
             {
               type: "cw20",
@@ -489,7 +489,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 8,
               //coinGeckoId: "shade-protocol",
               coinGeckoId: "pool:shd",
-              coinImageUrl: "https://app.osmosis.zone/tokens/shd.svg",
+              coinImageUrl: "/tokens/shd.svg",
             },
             {
               type: "cw20",
@@ -499,7 +499,7 @@ const chainInfos = IS_TESTNET
                 "cw20:secret1fl449muk5yq8dlad7a22nje4p5d2pnsgymhjfd:SILK",
               coinDecimals: 6,
               coinGeckoId: "pool:silk",
-              coinImageUrl: "https://app.osmosis.zone/tokens/silk.svg",
+              coinImageUrl: "/tokens/silk.svg",
             },
             {
               type: "cw20",
@@ -509,7 +509,7 @@ const chainInfos = IS_TESTNET
                 "cw20:secret1k6u0cy4feepm6pehnz804zmwakuwdapm69tuc4:stkd-SCRT",
               coinDecimals: 6,
               coinGeckoId: "stkd-scrt",
-              coinImageUrl: "https://app.osmosis.zone/tokens/stkd-scrt.svg",
+              coinImageUrl: "/tokens/stkd-scrt.svg",
             },
             {
               type: "cw20",
@@ -519,7 +519,7 @@ const chainInfos = IS_TESTNET
                 "cw20:secret1rgm2m5t530tdzyd99775n6vzumxa5luxcllml4:SIENNA",
               coinDecimals: 18,
               coinGeckoId: "sienna",
-              coinImageUrl: "https://app.osmosis.zone/tokens/sienna.svg",
+              coinImageUrl: "/tokens/sienna.svg",
             },
           ],
           features: ["ibc-transfer", "ibc-go", "wasmd_0.24+", "cosmwasm"],
@@ -542,7 +542,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "akash-network",
               coinGeckoId: "pool:uakt",
-              coinImageUrl: "https://app.osmosis.zone/tokens/akt.svg",
+              coinImageUrl: "/tokens/akt.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -562,7 +562,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "REGEN",
               coinMinimalDenom: "uregen",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/regen.svg",
+              coinImageUrl: "/tokens/regen.svg",
               // coinGeckoId: "regen",
               coinGeckoId: "pool:uregen",
               isStakeCurrency: true,
@@ -577,7 +577,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "NCT",
               coinMinimalDenom: "eco.uC.NCT",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/nct.svg",
+              coinImageUrl: "/tokens/nct.svg",
               coinGeckoId: "pool:nct",
             },
           ],
@@ -598,7 +598,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "sentinel",
               coinGeckoId: "pool:udvpn",
-              coinImageUrl: "https://app.osmosis.zone/tokens/dvpn.svg",
+              coinImageUrl: "/tokens/dvpn.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -627,7 +627,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "persistence",
               coinGeckoId: "pool:uxprt",
-              coinImageUrl: "https://app.osmosis.zone/tokens/xprt.svg",
+              coinImageUrl: "/tokens/xprt.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -643,7 +643,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "pstake-finance",
               coinGeckoId: "pool:pstake",
-              coinImageUrl: "https://app.osmosis.zone/tokens/pstake.svg",
+              coinImageUrl: "/tokens/pstake.svg",
             },
             {
               coinDenom: "stkATOM",
@@ -651,7 +651,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "stkatom",
               coinGeckoId: "pool:stk/uatom",
-              coinImageUrl: "https://app.osmosis.zone/tokens/stkatom.svg",
+              coinImageUrl: "/tokens/stkatom.svg",
             },
           ],
           features: ["ibc-transfer", "ibc-go"],
@@ -673,7 +673,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "iris-network",
               coinGeckoId: "pool:uiris",
-              coinImageUrl: "https://app.osmosis.zone/tokens/iris.svg",
+              coinImageUrl: "/tokens/iris.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -702,7 +702,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 8,
               // coinGeckoId: "crypto-com-chain",
               coinGeckoId: "pool:basecro",
-              coinImageUrl: "https://app.osmosis.zone/tokens/cro.svg",
+              coinImageUrl: "/tokens/cro.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -731,7 +731,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "starname",
               coinGeckoId: "pool:uiov",
-              coinImageUrl: "https://app.osmosis.zone/tokens/iov.svg",
+              coinImageUrl: "/tokens/iov.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -760,7 +760,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "e-money",
               coinGeckoId: "pool:ungm",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ngm.svg",
+              coinImageUrl: "/tokens/ngm.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -775,7 +775,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "e-money-eur",
               coinGeckoId: "pool:eeur",
-              coinImageUrl: "https://app.osmosis.zone/tokens/eeur.svg",
+              coinImageUrl: "/tokens/eeur.svg",
               isFeeCurrency: true,
               gasPriceStep: {
                 low: 1,
@@ -804,7 +804,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "juno-network",
               coinGeckoId: "pool:ujuno",
-              coinImageUrl: "https://app.osmosis.zone/tokens/juno.svg",
+              coinImageUrl: "/tokens/juno.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -823,7 +823,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "neta",
               coinGeckoId: "pool:neta",
-              coinImageUrl: "https://app.osmosis.zone/tokens/neta.svg",
+              coinImageUrl: "/tokens/neta.svg",
             },
             {
               type: "cw20",
@@ -835,7 +835,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 3,
               // coinGeckoId: "marble",
               coinGeckoId: "pool:marble",
-              coinImageUrl: "https://app.osmosis.zone/tokens/marble.svg",
+              coinImageUrl: "/tokens/marble.svg",
             },
             {
               type: "cw20",
@@ -847,7 +847,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGecko: "hope-galaxy",
               coinGeckoId: "pool:hope",
-              coinImageUrl: "https://app.osmosis.zone/tokens/hope.svg",
+              coinImageUrl: "/tokens/hope.svg",
             },
             {
               type: "cw20",
@@ -859,7 +859,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "racoon",
               coinGeckoId: "pool:rac",
-              coinImageUrl: "https://app.osmosis.zone/tokens/rac.svg",
+              coinImageUrl: "/tokens/rac.svg",
             },
             {
               type: "cw20",
@@ -870,7 +870,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1y9rf7ql6ffwkv02hsgd4yruz23pn4w97p75e2slsnkm0mnamhzysvqnxaq:BLOCK",
               coinDecimals: 6,
               //coinGeckoId: "pool:block",
-              coinImageUrl: "https://app.osmosis.zone/tokens/block.svg",
+              coinImageUrl: "/tokens/block.svg",
             },
             {
               type: "cw20",
@@ -881,7 +881,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1tdjwrqmnztn2j3sj2ln9xnyps5hs48q3ddwjrz7jpv6mskappjys5czd49:DHK",
               coinDecimals: 0,
               coinGeckoId: "pool:dhk",
-              coinImageUrl: "https://app.osmosis.zone/tokens/dhk.svg",
+              coinImageUrl: "/tokens/dhk.svg",
             },
             {
               type: "cw20",
@@ -893,7 +893,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "junoswap-raw-dao",
               coinGeckoId: "pool:raw",
-              coinImageUrl: "https://app.osmosis.zone/tokens/raw.svg",
+              coinImageUrl: "/tokens/raw.svg",
             },
             {
               type: "cw20",
@@ -904,7 +904,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno17wzaxtfdw5em7lc94yed4ylgjme63eh73lm3lutp2rhcxttyvpwsypjm4w:ASVT",
               coinDecimals: 6,
               coinGeckoId: "pool:asvt",
-              coinImageUrl: "https://app.osmosis.zone/tokens/asvt.png",
+              coinImageUrl: "/tokens/asvt.png",
             },
             {
               type: "cw20",
@@ -915,7 +915,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1n7n7d5088qlzlj37e9mgmkhx6dfgtvt02hqxq66lcap4dxnzdhwqfmgng3:JOE",
               coinDecimals: 6,
               coinGeckoId: "pool:joe",
-              coinImageUrl: "https://app.osmosis.zone/tokens/joe.png",
+              coinImageUrl: "/tokens/joe.png",
             },
             {
               type: "cw20",
@@ -926,7 +926,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1j0a9ymgngasfn3l5me8qpd53l5zlm9wurfdk7r65s5mg6tkxal3qpgf5se:GLTO",
               coinDecimals: 6,
               coinGeckoId: "pool:glto",
-              coinImageUrl: "https://app.osmosis.zone/tokens/glto.svg",
+              coinImageUrl: "/tokens/glto.svg",
             },
             {
               type: "cw20",
@@ -937,7 +937,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1gz8cf86zr4vw9cjcyyv432vgdaecvr9n254d3uwwkx9rermekddsxzageh:GKEY",
               coinDecimals: 6,
               coinGeckoId: "pool:gkey",
-              coinImageUrl: "https://app.osmosis.zone/tokens/gkey.svg",
+              coinImageUrl: "/tokens/gkey.svg",
             },
             {
               type: "cw20",
@@ -949,7 +949,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "stakeeasy-juno-derivative",
               coinGeckoId: "pool:sejuno",
-              coinImageUrl: "https://app.osmosis.zone/tokens/sejuno.svg",
+              coinImageUrl: "/tokens/sejuno.svg",
             },
             {
               type: "cw20",
@@ -959,7 +959,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom:
                 "cw20:juno1wwnhkagvcd3tjz6f8vsdsw5plqnw8qy2aj3rrhqr2axvktzv9q2qz8jxn3:bJUNO",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/bjuno.svg",
+              coinImageUrl: "/tokens/bjuno.svg",
             },
             {
               type: "cw20",
@@ -970,7 +970,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno159q8t5g02744lxq8lfmcn6f78qqulq9wn3y9w7lxjgkz4e0a6kvsfvapse:SOLAR",
               coinDecimals: 6,
               coinGeckoId: "pool:solar",
-              coinImageUrl: "https://app.osmosis.zone/tokens/solar.svg",
+              coinImageUrl: "/tokens/solar.svg",
             },
             {
               type: "cw20",
@@ -982,7 +982,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "seasy",
               coinGeckoId: "pool:seasy",
-              coinImageUrl: "https://app.osmosis.zone/tokens/seasy.svg",
+              coinImageUrl: "/tokens/seasy.svg",
             },
             {
               type: "cw20",
@@ -993,7 +993,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1p8x807f6h222ur0vssqy3qk6mcpa40gw2pchquz5atl935t7kvyq894ne3:MUSE",
               coinDecimals: 6,
               //coinGeckoId: "pool:muse",
-              coinImageUrl: "https://app.osmosis.zone/tokens/muse.svg",
+              coinImageUrl: "/tokens/muse.svg",
             },
             {
               type: "cw20",
@@ -1004,7 +1004,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1cltgm8v842gu54srmejewghnd6uqa26lzkpa635wzra9m9xuudkqa2gtcz:FURY",
               coinDecimals: 6,
               coinGeckoId: "fanfury",
-              coinImageUrl: "https://app.osmosis.zone/tokens/fanfury.png",
+              coinImageUrl: "/tokens/fanfury.png",
             },
             {
               type: "cw20",
@@ -1016,7 +1016,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               //coinGeckoId: "posthuman",
               coinGeckoId: "pool:phmn",
-              coinImageUrl: "https://app.osmosis.zone/tokens/phmn.svg",
+              coinImageUrl: "/tokens/phmn.svg",
             },
             {
               type: "cw20",
@@ -1027,7 +1027,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1u45shlp0q4gcckvsj06ss4xuvsu0z24a0d0vr9ce6r24pht4e5xq7q995n:HOPERS",
               coinDecimals: 6,
               coinGeckoId: "pool:hopers",
-              coinImageUrl: "https://app.osmosis.zone/tokens/hopers.svg",
+              coinImageUrl: "/tokens/hopers.svg",
             },
             {
               type: "cw20",
@@ -1038,7 +1038,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9:WYND",
               coinDecimals: 6,
               coinGeckoId: "pool:wynd",
-              coinImageUrl: "https://app.osmosis.zone/tokens/wynd.svg",
+              coinImageUrl: "/tokens/wynd.svg",
             },
             {
               type: "cw20",
@@ -1049,7 +1049,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1qmlchtmjpvu0cr7u0tad2pq8838h6farrrjzp39eqa9xswg7teussrswlq:NRIDE",
               coinDecimals: 6,
               coinGeckoId: "pool:nride",
-              coinImageUrl: "https://app.osmosis.zone/tokens/nride.svg",
+              coinImageUrl: "/tokens/nride.svg",
             },
             {
               type: "cw20",
@@ -1060,7 +1060,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1u8cr3hcjvfkzxcaacv9q75uw9hwjmn8pucc93pmy6yvkzz79kh3qncca8x:FOX",
               coinDecimals: 6,
               coinGeckoId: "pool:fox",
-              coinImageUrl: "https://app.osmosis.zone/tokens/fox.svg",
+              coinImageUrl: "/tokens/fox.svg",
             },
             {
               type: "cw20",
@@ -1071,7 +1071,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1xekkh27punj0uxruv3gvuydyt856fax0nu750xns99t2qcxp7xmsqwhfma:GRDN",
               coinDecimals: 6,
               coinGeckoId: "pool:grdn",
-              coinImageUrl: "https://app.osmosis.zone/tokens/guardian.png",
+              coinImageUrl: "/tokens/guardian.png",
             },
             {
               type: "cw20",
@@ -1082,7 +1082,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno166heaxlyntd33a5euh4rrz26svhean4klzw594esmd02l4atan6sazy2my:MNPU",
               coinDecimals: 6,
               coinGeckoId: "pool:mnpu",
-              coinImageUrl: "https://app.osmosis.zone/tokens/mnpu.svg",
+              coinImageUrl: "/tokens/mnpu.svg",
             },
             {
               type: "cw20",
@@ -1093,7 +1093,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1x5qt47rw84c4k6xvvywtrd40p8gxjt8wnmlahlqg07qevah3f8lqwxfs7z:SHIBAC",
               coinDecimals: 6,
               coinGeckoId: "pool:shibac",
-              coinImageUrl: "https://app.osmosis.zone/tokens/shibacosmos.png",
+              coinImageUrl: "/tokens/shibacosmos.png",
             },
             {
               type: "cw20",
@@ -1104,7 +1104,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1qqwf3lkfjhp77yja7gmg3y95pda0e5xctqrdhf3wvwdd79flagvqfgrgxp:SKOJ",
               coinDecimals: 6,
               coinGeckoId: "pool:skoj",
-              coinImageUrl: "https://app.osmosis.zone/tokens/sikoba.svg",
+              coinImageUrl: "/tokens/sikoba.svg",
             },
             {
               type: "cw20",
@@ -1115,7 +1115,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1ngww7zxak55fql42wmyqrr4rhzpne24hhs4p3w4cwhcdgqgr3hxsmzl9zg:CLST",
               coinDecimals: 6,
               coinGeckoId: "pool:clst",
-              coinImageUrl: "https://app.osmosis.zone/tokens/celestims.png",
+              coinImageUrl: "/tokens/celestims.png",
             },
             {
               type: "cw20",
@@ -1126,7 +1126,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1ytymtllllsp3hfmndvcp802p2xmy5s8m59ufel8xv9ahyxyfs4hs4kd4je:OSDOGE",
               coinDecimals: 6,
               coinGeckoId: "pool:osdoge",
-              coinImageUrl: "https://app.osmosis.zone/tokens/osdoge.svg",
+              coinImageUrl: "/tokens/osdoge.svg",
             },
             {
               type: "cw20",
@@ -1137,7 +1137,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1jrr0tuuzxrrwcg6hgeqhw5wqpck2y55734e7zcrp745aardlp0qqg8jz06:APEMOS",
               coinDecimals: 6,
               coinGeckoId: "pool:apemos",
-              coinImageUrl: "https://app.osmosis.zone/tokens/apemos.png",
+              coinImageUrl: "/tokens/apemos.png",
             },
             {
               type: "cw20",
@@ -1148,7 +1148,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1jwdy7v4egw36pd84aeks3ww6n8k7zhsumd4ac8q5lts83ppxueus4626e8:INVDRS",
               coinDecimals: 6,
               coinGeckoId: "pool:invdrs",
-              coinImageUrl: "https://app.osmosis.zone/tokens/invdrs.png",
+              coinImageUrl: "/tokens/invdrs.png",
             },
             {
               type: "cw20",
@@ -1159,7 +1159,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1k2ruzzvvwwtwny6gq6kcwyfhkzahaunp685wmz4hafplduekj98q9hgs6d:DOGA",
               coinDecimals: 6,
               coinGeckoId: "pool:doga",
-              coinImageUrl: "https://app.osmosis.zone/tokens/doga.png",
+              coinImageUrl: "/tokens/doga.png",
             },
             {
               type: "cw20",
@@ -1170,7 +1170,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1f5datjdse3mdgrapwuzs3prl7pvxxht48ns6calnn0t77v2s9l8s0qu488:CATMOS",
               coinDecimals: 6,
               coinGeckoId: "pool:catmos",
-              coinImageUrl: "https://app.osmosis.zone/tokens/catmos.png",
+              coinImageUrl: "/tokens/catmos.png",
             },
             {
               type: "cw20",
@@ -1181,7 +1181,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1j4ux0f6gt7e82z7jdpm25v4g2gts880ap64rdwa49989wzhd0dfqed6vqm:SUMMIT",
               coinDecimals: 6,
               coinGeckoId: "pool:summit",
-              coinImageUrl: "https://app.osmosis.zone/tokens/summit.png",
+              coinImageUrl: "/tokens/summit.png",
             },
             {
               type: "cw20",
@@ -1192,7 +1192,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1dyyf7pxeassxvftf570krv7fdf5r8e4r04mp99h0mllsqzp3rs4q7y8yqg:SPACER",
               coinDecimals: 6,
               coinGeckoId: "pool:spacer",
-              coinImageUrl: "https://app.osmosis.zone/tokens/spacer.png",
+              coinImageUrl: "/tokens/spacer.png",
             },
             {
               type: "cw20",
@@ -1203,7 +1203,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1dpany8c0lj526lsa02sldv7shzvnw5dt5ues72rk35hd69rrydxqeraz8l:LIGHT",
               coinDecimals: 9,
               coinGeckoId: "pool:light",
-              coinImageUrl: "https://app.osmosis.zone/tokens/light.png",
+              coinImageUrl: "/tokens/light.png",
             },
             {
               type: "cw20",
@@ -1214,7 +1214,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1llg7q2d5dqlrqzh5dxv8c7kzzjszld34s5vktqmlmaaxqjssz43sxyhq0d:MILE",
               coinDecimals: 6,
               coinGeckoId: "pool:mile",
-              coinImageUrl: "https://app.osmosis.zone/tokens/mille.png",
+              coinImageUrl: "/tokens/mille.png",
             },
             {
               type: "cw20",
@@ -1225,7 +1225,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno13ca2g36ng6etcfhr9qxx352uw2n5e92np54thfkm3w3nzlhsgvwsjaqlyq:MANNA",
               coinDecimals: 6,
               coinGeckoId: "pool:manna",
-              coinImageUrl: "https://app.osmosis.zone/tokens/manna.png",
+              coinImageUrl: "/tokens/manna.png",
             },
             {
               type: "cw20",
@@ -1236,7 +1236,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1lpvx3mv2a6ddzfjc7zzz2v2cm5gqgqf0hx67hc5p5qwn7hz4cdjsnznhu8:VOID",
               coinDecimals: 6,
               coinGeckoId: "pool:void",
-              coinImageUrl: "https://app.osmosis.zone/tokens/void.png",
+              coinImageUrl: "/tokens/void.png",
             },
             {
               type: "cw20",
@@ -1247,7 +1247,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno10vgf2u03ufcf25tspgn05l7j3tfg0j63ljgpffy98t697m5r5hmqaw95ux:SLCA",
               coinDecimals: 6,
               coinGeckoId: "pool:slca",
-              coinImageUrl: "https://app.osmosis.zone/tokens/silica.png",
+              coinImageUrl: "/tokens/silica.png",
             },
             {
               type: "cw20",
@@ -1258,7 +1258,7 @@ const chainInfos = IS_TESTNET
                 "cw20:juno1epxnvge53c4hkcmqzlxryw5fp7eae2utyk6ehjcfpwajwp48km3sgxsh9k:PEPE",
               coinDecimals: 6,
               coinGeckoId: "pool:pepec",
-              coinImageUrl: "https://app.osmosis.zone/tokens/pepec.png",
+              coinImageUrl: "/tokens/pepec.png",
             },
           ],
           features: ["ibc-transfer", "ibc-go", "wasmd_0.24+", "cosmwasm"],
@@ -1280,7 +1280,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "microtick",
               coinGeckoId: "pool:utick",
-              coinImageUrl: "https://app.osmosis.zone/tokens/tick.svg",
+              coinImageUrl: "/tokens/tick.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -1305,7 +1305,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 9,
               // coinGeckoId: "likecoin",
               coinGeckoId: "pool:nanolike",
-              coinImageUrl: "https://app.osmosis.zone/tokens/like.svg",
+              coinImageUrl: "/tokens/like.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1335,7 +1335,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "ixo",
               coinGeckoId: "pool:uixo",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ixo.svg",
+              coinImageUrl: "/tokens/ixo.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1364,7 +1364,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "bitcanna",
               coinGeckoId: "pool:ubcna",
-              coinImageUrl: "https://app.osmosis.zone/tokens/bcna.svg",
+              coinImageUrl: "/tokens/bcna.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1393,7 +1393,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "bitsong",
               coinGeckoId: "pool:ubtsg",
-              coinImageUrl: "https://app.osmosis.zone/tokens/btsg.svg",
+              coinImageUrl: "/tokens/btsg.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1407,105 +1407,105 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png",
+                "/tokens/ft2D8E7041556CE93E1EFD66C07C45D551A6AAAE09.png",
             },
             {
               coinDenom: "FASANO",
               coinMinimalDenom: "ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png",
+                "/tokens/ft25B30C386CDDEBD1413D5AE1180956AE9EB3B9F7.png",
             },
             {
               coinDenom: "D9X",
               coinMinimalDenom: "ft575B10B0CEE2C164D9ED6A96313496F164A9607C",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png",
+                "/tokens/ft575B10B0CEE2C164D9ED6A96313496F164A9607C.png",
             },
             {
               coinDenom: "FONTI",
               coinMinimalDenom: "ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png",
+                "/tokens/ft56664FC98A2CF5F4FBAC3566D1A11D891AD88305.png",
             },
             {
               coinDenom: "BJKS",
               coinMinimalDenom: "ft52EEB0EE509AC546ED92EAC8591F731F213DDD16",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png",
+                "/tokens/ft52EEB0EE509AC546ED92EAC8591F731F213DDD16.png",
             },
             {
               coinDenom: "RWNE",
               coinMinimalDenom: "ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png",
+                "/tokens/ftE4903ECC861CA45F2C2BC7EAB8255D2E6E87A33A.png",
             },
             {
               coinDenom: "ENMODA",
               coinMinimalDenom: "ft85AE1716C5E39EA6D64BBD7898C3899A7B500626",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png",
+                "/tokens/ft85AE1716C5E39EA6D64BBD7898C3899A7B500626.png",
             },
             {
               coinDenom: "404DR",
               coinMinimalDenom: "ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png",
+                "/tokens/ft99091610CCC66F4277C66D14AF2BC4C5EE52E27A.png",
             },
             {
               coinDenom: "N43",
               coinMinimalDenom: "ft387C1C279D962ED80C09C1D592A92C4275FD7C5D",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png",
+                "/tokens/ft387C1C279D962ED80C09C1D592A92C4275FD7C5D.png",
             },
             {
               coinDenom: "LOBO",
               coinMinimalDenom: "ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png",
+                "/tokens/ft24C9FA4F10B0F235F4A815B15FC774E046A2B2EB.png",
             },
             {
               coinDenom: "VIBRA",
               coinMinimalDenom: "ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png",
+                "/tokens/ft7020C2A8E984EEBCBB383E91CD6FBB067BB2272B.png",
             },
             {
               coinDenom: "KARINA",
               coinMinimalDenom: "ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png",
+                "/tokens/ft2DD67F5D99E9A141142B48474FA7B6B3FF00A3FE.png",
             },
             {
               coinDenom: "TESTA",
               coinMinimalDenom: "ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png",
+                "/tokens/ft4B030260D99E3ABE2B604EA2B33BAF3C085CDA12.png",
             },
             {
               coinDenom: "CMQZ",
               coinMinimalDenom: "ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png",
+                "/tokens/ftD4B6290EDEE1EC7B97AB5A1DC6C177EFD08ADCC3.png",
             },
             {
               coinDenom: "LDON",
               coinMinimalDenom: "ft347B1612A2B7659913679CF6CD45B8B130C50A00",
               coinDecimals: 6,
               coinImageUrl:
-                "https://app.osmosis.zone/tokens/ft347B1612A2B7659913679CF6CD45B8B130C50A00.png",
+                "/tokens/ft347B1612A2B7659913679CF6CD45B8B130C50A00.png",
             },
           ],
           features: ["ibc-transfer", "ibc-go"],
@@ -1527,7 +1527,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "ki",
               coinGeckoId: "pool:uxki",
-              coinImageUrl: "https://app.osmosis.zone/tokens/xki.svg",
+              coinImageUrl: "/tokens/xki.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1545,7 +1545,7 @@ const chainInfos = IS_TESTNET
                 "cw20:ki1dt3lk455ed360pna38fkhqn0p8y44qndsr77qu73ghyaz2zv4whq83mwdy:LVN",
               coinDecimals: 6,
               coinGeckoId: "pool:lvn",
-              coinImageUrl: "https://app.osmosis.zone/tokens/lvn.png",
+              coinImageUrl: "/tokens/lvn.png",
             },
           ],
           features: ["ibc-transfer", "ibc-go", "wasmd_0.24+", "cosmwasm"],
@@ -1567,7 +1567,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "medibloc",
               coinGeckoId: "pool:umed",
-              coinImageUrl: "https://app.osmosis.zone/tokens/med.svg",
+              coinImageUrl: "/tokens/med.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1596,7 +1596,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 0,
               // coinGeckoId: "bostrom",
               coinGeckoId: "pool:boot",
-              coinImageUrl: "https://app.osmosis.zone/tokens/boot.svg",
+              coinImageUrl: "/tokens/boot.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1625,7 +1625,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               //coinGeckoId: "comdex",
               coinGeckoId: "pool:ucmdx",
-              coinImageUrl: "https://app.osmosis.zone/tokens/cmdx.svg",
+              coinImageUrl: "/tokens/cmdx.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1639,7 +1639,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "ucmst",
               coinDecimals: 6,
               coinGeckoId: "pool:ucmst",
-              coinImageUrl: "https://app.osmosis.zone/tokens/cmst.svg",
+              coinImageUrl: "/tokens/cmst.svg",
               pegMechanism: "collateralized",
             },
             {
@@ -1647,7 +1647,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "uharbor",
               coinDecimals: 6,
               coinGeckoId: "pool:uharbor",
-              coinImageUrl: "https://app.osmosis.zone/tokens/harbor.svg",
+              coinImageUrl: "/tokens/harbor.svg",
             },
           ],
           features: ["ibc-transfer"],
@@ -1669,7 +1669,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 9,
               // coinGeckoId: "cheqd-network",
               coinGeckoId: "pool:ncheq",
-              coinImageUrl: "https://app.osmosis.zone/tokens/cheq.svg",
+              coinImageUrl: "/tokens/cheq.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1698,7 +1698,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "stargaze",
               coinGeckoId: "pool:ustars",
-              coinImageUrl: "https://app.osmosis.zone/tokens/stars.svg",
+              coinImageUrl: "/tokens/stars.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -1722,7 +1722,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "chihuahua-token",
               coinGeckoId: "pool:uhuahua",
-              coinImageUrl: "https://app.osmosis.zone/tokens/huahua.svg",
+              coinImageUrl: "/tokens/huahua.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1751,7 +1751,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "lum-network",
               coinGeckoId: "pool:ulum",
-              coinImageUrl: "https://app.osmosis.zone/tokens/lum.svg",
+              coinImageUrl: "/tokens/lum.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1780,7 +1780,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "vidulum",
               coinGeckoId: "pool:uvdl",
-              coinImageUrl: "https://app.osmosis.zone/tokens/vdl.svg",
+              coinImageUrl: "/tokens/vdl.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -1804,7 +1804,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "desmos",
               coinGeckoId: "pool:udsm",
-              coinImageUrl: "https://app.osmosis.zone/tokens/dsm.svg",
+              coinImageUrl: "/tokens/dsm.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1834,7 +1834,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "dig-chain",
               coinGeckoId: "pool:udig",
-              coinImageUrl: "https://app.osmosis.zone/tokens/dig.png",
+              coinImageUrl: "/tokens/dig.png",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1863,7 +1863,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "sommelier",
               coinGeckoId: "pool:usomm",
-              coinImageUrl: "https://app.osmosis.zone/tokens/somm.svg",
+              coinImageUrl: "/tokens/somm.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -1887,7 +1887,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "sifchain",
               coinGeckoId: "pool:rowan",
-              coinImageUrl: "https://app.osmosis.zone/tokens/rowan.svg",
+              coinImageUrl: "/tokens/rowan.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1916,7 +1916,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "band-protocol",
               coinGeckoId: "pool:uband",
-              coinImageUrl: "https://app.osmosis.zone/tokens/band.svg",
+              coinImageUrl: "/tokens/band.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -1940,7 +1940,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "darcmatter-coin",
               coinGeckoId: "pool:udarc",
-              coinImageUrl: "https://app.osmosis.zone/tokens/darc.svg",
+              coinImageUrl: "/tokens/darc.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -1964,7 +1964,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "umee",
               coinGeckoId: "pool:uumee",
-              coinImageUrl: "https://app.osmosis.zone/tokens/umee.svg",
+              coinImageUrl: "/tokens/umee.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -1993,7 +1993,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "graviton",
               coinGeckoId: "pool:ugraviton",
-              coinImageUrl: "https://app.osmosis.zone/tokens/grav.svg",
+              coinImageUrl: "/tokens/grav.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2009,7 +2009,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "pstake-finance",
               coinGeckoId: "pool:pstake",
-              coinImageUrl: "https://app.osmosis.zone/tokens/pstake.svg",
+              coinImageUrl: "/tokens/pstake.svg",
             },
             {
               coinDenom: "WBTC.grv",
@@ -2018,7 +2018,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 8,
               // coinGeckoId: "wrapped-bitcoin",
               coinGeckoId: "pool:wbtc-satoshi",
-              coinImageUrl: "https://app.osmosis.zone/tokens/wbtc.grv.svg",
+              coinImageUrl: "/tokens/wbtc.grv.svg",
             },
             {
               coinDenom: "wETH.grv",
@@ -2027,7 +2027,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "weth",
               coinGeckoId: "pool:weth-wei.grv",
-              coinImageUrl: "https://app.osmosis.zone/tokens/weth.grv.svg",
+              coinImageUrl: "/tokens/weth.grv.svg",
             },
             {
               coinDenom: "USDC.grv",
@@ -2036,7 +2036,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "usd-coin",
               coinGeckoId: "pool:uusdc.grv",
-              coinImageUrl: "https://app.osmosis.zone/tokens/usdc.grv.svg",
+              coinImageUrl: "/tokens/usdc.grv.svg",
               pegMechanism: "collateralized",
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2052,7 +2052,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "dai",
               coinGeckoId: "pool:dai-wei",
-              coinImageUrl: "https://app.osmosis.zone/tokens/dai.grv.svg",
+              coinImageUrl: "/tokens/dai.grv.svg",
               pegMechanism: "collateralized",
             },
             {
@@ -2062,7 +2062,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "tether",
               coinGeckoId: "pool:uusdt.grv",
-              coinImageUrl: "https://app.osmosis.zone/tokens/usdt.grv.svg",
+              coinImageUrl: "/tokens/usdt.grv.svg",
               pegMechanism: "collateralized",
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2092,7 +2092,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "decentr",
               coinGeckoId: "pool:udec",
-              coinImageUrl: "https://app.osmosis.zone/tokens/dec.svg",
+              coinImageUrl: "/tokens/dec.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -2117,7 +2117,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "shentu",
               coinGeckoId: "pool:uctk",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ctk.svg",
+              coinImageUrl: "/tokens/ctk.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -2141,7 +2141,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 8,
               // coinGeckoId: "switcheo",
               coinGeckoId: "pool:swth",
-              coinImageUrl: "https://app.osmosis.zone/tokens/swth.svg",
+              coinImageUrl: "/tokens/swth.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2171,7 +2171,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "injective-protocol",
               coinGeckoId: "pool:inj",
-              coinImageUrl: "https://app.osmosis.zone/tokens/inj.svg",
+              coinImageUrl: "/tokens/inj.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2206,7 +2206,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "cerberus-2",
               coinGeckoId: "pool:ucrbrus",
-              coinImageUrl: "https://app.osmosis.zone/tokens/crbrus.svg",
+              coinImageUrl: "/tokens/crbrus.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -2230,7 +2230,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "fetch-ai",
               coinGeckoId: "pool:afet",
-              coinImageUrl: "https://app.osmosis.zone/tokens/fet.svg",
+              coinImageUrl: "/tokens/fet.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2259,7 +2259,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "assetmantle",
               coinGeckoId: "pool:umntl",
-              coinImageUrl: "https://app.osmosis.zone/tokens/mntl.png",
+              coinImageUrl: "/tokens/mntl.png",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2288,7 +2288,7 @@ const chainInfos = IS_TESTNET
               // coinGeckoId: "provenance-blockchain",
               coinGeckoId: "pool:nhash",
               coinDecimals: 9,
-              coinImageUrl: "https://app.osmosis.zone/tokens/prov.svg",
+              coinImageUrl: "/tokens/prov.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2316,7 +2316,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "uglx",
               coinDecimals: 6,
               coinGeckoId: "pool:uglx",
-              coinImageUrl: "https://app.osmosis.zone/tokens/glx.svg",
+              coinImageUrl: "/tokens/glx.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2345,7 +2345,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "umeme",
               coinDecimals: 6,
               coinGeckoId: "pool:umeme",
-              coinImageUrl: "https://app.osmosis.zone/tokens/meme.svg",
+              coinImageUrl: "/tokens/meme.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2374,7 +2374,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "evmos",
               coinGeckoId: "pool:aevmos",
-              coinImageUrl: "https://app.osmosis.zone/tokens/evmos.svg",
+              coinImageUrl: "/tokens/evmos.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2408,7 +2408,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "terra-luna-2",
               coinGeckoId: "pool:uluna",
-              coinImageUrl: "https://app.osmosis.zone/tokens/luna.svg",
+              coinImageUrl: "/tokens/luna.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2437,7 +2437,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               coinGeckoId: "rizon",
               //coinGeckoId: "pool:uatolo",
-              coinImageUrl: "https://app.osmosis.zone/tokens/atolo.svg",
+              coinImageUrl: "/tokens/atolo.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2466,7 +2466,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "kava",
               coinGeckoId: "pool:ukava",
-              coinImageUrl: "https://app.osmosis.zone/tokens/kava.svg",
+              coinImageUrl: "/tokens/kava.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2481,7 +2481,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "kava-lend",
               //coinGeckoId: "pool:hard",
-              coinImageUrl: "https://app.osmosis.zone/tokens/hard.svg",
+              coinImageUrl: "/tokens/hard.svg",
             },
             {
               coinDenom: "SWP",
@@ -2489,7 +2489,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "kava-swap",
               //coinGeckoId: "pool:swp",
-              coinImageUrl: "https://app.osmosis.zone/tokens/swp.svg",
+              coinImageUrl: "/tokens/swp.svg",
             },
             {
               coinDenom: "USDX",
@@ -2497,7 +2497,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "usdx",
               //coinGeckoId: "pool:usdx",
-              coinImageUrl: "https://app.osmosis.zone/tokens/usdx.svg",
+              coinImageUrl: "/tokens/usdx.svg",
             },
           ],
           features: ["ibc-transfer", "ibc-go"],
@@ -2518,7 +2518,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "el1",
               coinDecimals: 18,
               coinGeckoId: "pool:el1",
-              coinImageUrl: "https://app.osmosis.zone/tokens/l1.svg",
+              coinImageUrl: "/tokens/l1.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2547,7 +2547,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "kujira",
               coinGeckoId: "pool:ukuji",
-              coinImageUrl: "https://app.osmosis.zone/tokens/kuji.svg",
+              coinImageUrl: "/tokens/kuji.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2562,7 +2562,7 @@ const chainInfos = IS_TESTNET
                 "factory/kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7/uusk",
               coinDecimals: 6,
               coinGeckoId: "usk",
-              coinImageUrl: "https://app.osmosis.zone/tokens/usk.svg",
+              coinImageUrl: "/tokens/usk.svg",
             },
           ],
           features: ["ibc-transfer", "ibc-go"],
@@ -2584,7 +2584,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "tgrade",
               coinGeckoId: "pool:utgd",
-              coinImageUrl: "https://app.osmosis.zone/tokens/tgrade.svg",
+              coinImageUrl: "/tokens/tgrade.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2613,7 +2613,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "echelon",
               coinGeckoId: "pool:aechelon",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ech.svg",
+              coinImageUrl: "/tokens/ech.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2642,7 +2642,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "odin-protocol",
               coinGeckoId: "pool:odin",
-              coinImageUrl: "https://app.osmosis.zone/tokens/odin.svg",
+              coinImageUrl: "/tokens/odin.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2657,14 +2657,14 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "geodb",
               coinGeckoId: "pool:geo",
-              coinImageUrl: "https://app.osmosis.zone/tokens/geo.svg",
+              coinImageUrl: "/tokens/geo.svg",
             },
             {
               coinDenom: "O9W",
               coinMinimalDenom: "mO9W",
               coinDecimals: 6,
               coinGeckoId: "pool:o9w",
-              coinImageUrl: "https://app.osmosis.zone/tokens/o9w.svg",
+              coinImageUrl: "/tokens/o9w.svg",
             },
           ],
           features: ["ibc-transfer", "ibc-go", "wasmd_0.24+", "cosmwasm"],
@@ -2686,7 +2686,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "crescent-network",
               coinGeckoId: "pool:ucre",
-              coinImageUrl: "https://app.osmosis.zone/tokens/cre.svg",
+              coinImageUrl: "/tokens/cre.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2714,7 +2714,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "ulumen",
               coinDecimals: 6,
               coinGeckoId: "pool:ulumen",
-              coinImageUrl: "https://app.osmosis.zone/tokens/lumen.svg",
+              coinImageUrl: "/tokens/lumen.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2744,7 +2744,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               //coinGeckoId: "oraichain-token",
               coinGeckoId: "pool:orai",
-              coinImageUrl: "https://app.osmosis.zone/tokens/orai.svg",
+              coinImageUrl: "/tokens/orai.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2773,7 +2773,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "cudos",
               coinGeckoId: "pool:acudos",
-              coinImageUrl: "https://app.osmosis.zone/tokens/cudos.svg",
+              coinImageUrl: "/tokens/cudos.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2802,7 +2802,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "agoric",
               coinGeckoId: "pool:ubld",
-              coinImageUrl: "https://app.osmosis.zone/tokens/bld.svg",
+              coinImageUrl: "/tokens/bld.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2816,7 +2816,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "uist",
               coinDecimals: 6,
               coinGeckoId: "pool:uist",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ist.svg",
+              coinImageUrl: "/tokens/ist.svg",
               isFeeCurrency: true,
               gasPriceStep: {
                 low: 0.0034,
@@ -2845,7 +2845,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "stride",
               coinGeckoId: "pool:ustrd",
-              coinImageUrl: "https://app.osmosis.zone/tokens/strd.svg",
+              coinImageUrl: "/tokens/strd.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2860,49 +2860,49 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "stride-staked-atom",
               coinGeckoId: "pool:stuatom",
-              coinImageUrl: "https://app.osmosis.zone/tokens/statom.svg",
+              coinImageUrl: "/tokens/statom.svg",
             },
             {
               coinDenom: "stSTARS",
               coinMinimalDenom: "stustars",
               coinDecimals: 6,
               coinGeckoId: "pool:stustars",
-              coinImageUrl: "https://app.osmosis.zone/tokens/ststars.svg",
+              coinImageUrl: "/tokens/ststars.svg",
             },
             {
               coinDenom: "stOSMO",
               coinMinimalDenom: "stuosmo",
               coinDecimals: 6,
               coinGeckoId: "pool:stuosmo",
-              coinImageUrl: "https://app.osmosis.zone/tokens/stosmo.svg",
+              coinImageUrl: "/tokens/stosmo.svg",
             },
             {
               coinDenom: "stJUNO",
               coinMinimalDenom: "stujuno",
               coinDecimals: 6,
               coinGeckoId: "pool:stujuno",
-              coinImageUrl: "https://app.osmosis.zone/tokens/stjuno.svg",
+              coinImageUrl: "/tokens/stjuno.svg",
             },
             {
               coinDenom: "stSCRT",
               coinMinimalDenom: "stuscrt",
               coinDecimals: 6,
               coinGeckoId: "secret",
-              coinImageUrl: "https://app.osmosis.zone/tokens/stscrt.svg",
+              coinImageUrl: "/tokens/stscrt.svg",
             },
             {
               coinDenom: "stLUNA",
               coinMinimalDenom: "stuluna",
               coinDecimals: 6,
               coinGeckoId: "pool:stuluna",
-              coinImageUrl: "https://app.osmosis.zone/tokens/stluna.svg",
+              coinImageUrl: "/tokens/stluna.svg",
             },
             {
               coinDenom: "stEVMOS",
               coinMinimalDenom: "staevmos",
               coinDecimals: 18,
               coinGeckoId: "pool:staevmos",
-              coinImageUrl: "https://app.osmosis.zone/tokens/stevmos.svg",
+              coinImageUrl: "/tokens/stevmos.svg",
             },
           ],
           features: ["ibc-transfer", "ibc-go"],
@@ -2924,7 +2924,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "rebus",
               coinGeckoId: "pool:arebus",
-              coinImageUrl: "https://app.osmosis.zone/tokens/rebus.svg",
+              coinImageUrl: "/tokens/rebus.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -2948,7 +2948,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "teritori",
               coinGeckoId: "pool:utori",
-              coinImageUrl: "https://app.osmosis.zone/tokens/utori.svg",
+              coinImageUrl: "/tokens/utori.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -2977,7 +2977,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               // coinGeckoId: "lambda",
               coinGeckoId: "pool:lambda",
-              coinImageUrl: "https://app.osmosis.zone/tokens/lambda.svg",
+              coinImageUrl: "/tokens/lambda.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3011,7 +3011,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 9,
               // coinGeckoId: "unification",
               coinGeckoId: "pool:nund",
-              coinImageUrl: "https://app.osmosis.zone/tokens/fund.svg",
+              coinImageUrl: "/tokens/fund.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3040,7 +3040,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "ujkl",
               coinDecimals: 6,
               coinGeckoId: "pool:jkl",
-              coinImageUrl: "https://app.osmosis.zone/tokens/jkl.svg",
+              coinImageUrl: "/tokens/jkl.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3069,7 +3069,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               coinGeckoId: "pool:ubze",
               // coinGeckoId: "BZEdge",
-              coinImageUrl: "https://app.osmosis.zone/tokens/bze.svg",
+              coinImageUrl: "/tokens/bze.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
             },
@@ -3094,7 +3094,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               coinGeckoId: "pool:aacre",
               // coinGeckoId: "arable-protocol",
-              coinImageUrl: "https://app.osmosis.zone/tokens/acre.svg",
+              coinImageUrl: "/tokens/acre.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3110,7 +3110,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               coinGeckoId:
                 "pool:erc20/0x2Cbea61fdfDFA520Ee99700F104D5b75ADf50B0c",
-              coinImageUrl: "https://app.osmosis.zone/tokens/arusd.svg",
+              coinImageUrl: "/tokens/arusd.svg",
             },
             {
               coinDenom: "CNTO",
@@ -3119,7 +3119,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 18,
               coinGeckoId:
                 "pool:erc20/0xAE6D3334989a22A65228732446731438672418F2",
-              coinImageUrl: "https://app.osmosis.zone/tokens/cnto.svg",
+              coinImageUrl: "/tokens/cnto.svg",
             },
           ],
           features: [
@@ -3145,7 +3145,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "aimv",
               coinDecimals: 18,
               coinGeckoId: "pool:aimv",
-              coinImageUrl: "https://app.osmosis.zone/tokens/imversed.svg",
+              coinImageUrl: "/tokens/imversed.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3179,7 +3179,7 @@ const chainInfos = IS_TESTNET
               coinDecimals: 6,
               // coinGeckoId: "medasdigital",
               coinGeckoId: "pool:umedas",
-              coinImageUrl: "https://app.osmosis.zone/tokens/medas.svg",
+              coinImageUrl: "/tokens/medas.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3207,7 +3207,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "anom",
               coinDecimals: 18,
               coinGeckoId: "pool:anom",
-              coinImageUrl: "https://app.osmosis.zone/tokens/nom.svg",
+              coinImageUrl: "/tokens/nom.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3236,7 +3236,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "aplanq",
               coinDecimals: 18,
               coinGeckoId: "pool:aplanq",
-              coinImageUrl: "https://app.osmosis.zone/tokens/planq.svg",
+              coinImageUrl: "/tokens/planq.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3269,7 +3269,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "dys",
               coinDecimals: 0,
               coinGeckoId: "pool:dys",
-              coinImageUrl: "https://app.osmosis.zone/tokens/dys.svg",
+              coinImageUrl: "/tokens/dys.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3298,7 +3298,7 @@ const chainInfos = IS_TESTNET
               coinMinimalDenom: "umars",
               coinDecimals: 6,
               coinGeckoId: "pool:mars",
-              coinImageUrl: "https://app.osmosis.zone/tokens/mars.svg",
+              coinImageUrl: "/tokens/mars.svg",
               isStakeCurrency: true,
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3326,7 +3326,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "CANTO",
               coinMinimalDenom: "acanto",
               coinDecimals: 18,
-              coinImageUrl: "https://app.osmosis.zone/tokens/canto.svg",
+              coinImageUrl: "/tokens/canto.svg",
               coinGeckoId: "pool:acanto",
               isStakeCurrency: true,
               isFeeCurrency: true,
@@ -3360,7 +3360,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "QCK",
               coinMinimalDenom: "uqck",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/qck.svg",
+              coinImageUrl: "/tokens/qck.svg",
               coinGeckoId: "pool:uqck",
               isStakeCurrency: true,
               isFeeCurrency: true,
@@ -3374,28 +3374,28 @@ const chainInfos = IS_TESTNET
               coinDenom: "qSTARS",
               coinMinimalDenom: "uqstars",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/qstars.svg",
+              coinImageUrl: "/tokens/qstars.svg",
               coinGeckoId: "pool:uqstars",
             },
             {
               coinDenom: "qATOM",
               coinMinimalDenom: "uqatom",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/qatom.svg",
+              coinImageUrl: "/tokens/qatom.svg",
               coinGeckoId: "pool:uqatom",
             },
             {
               coinDenom: "qREGEN",
               coinMinimalDenom: "uqregen",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/qregen.svg",
+              coinImageUrl: "/tokens/qregen.svg",
               coinGeckoId: "pool:uqregen",
             },
             {
               coinDenom: "qOSMO",
               coinMinimalDenom: "uqosmo",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/qosmo.svg",
+              coinImageUrl: "/tokens/qosmo.svg",
               coinGeckoId: "pool:uqosmo",
             },
           ],
@@ -3416,7 +3416,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "EBL",
               coinMinimalDenom: "uebl",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/8ball.svg",
+              coinImageUrl: "/tokens/8ball.svg",
               coinGeckoId: "pool:uebl",
               isStakeCurrency: true,
               isFeeCurrency: true,
@@ -3444,7 +3444,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "ARKH",
               coinMinimalDenom: "arkh",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/arkh.svg",
+              coinImageUrl: "/tokens/arkh.svg",
               coinGeckoId: "pool:arkh",
               isStakeCurrency: true,
               isFeeCurrency: true,
@@ -3472,7 +3472,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "STAKE",
               coinMinimalDenom: "ustake",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/stake.svg",
+              coinImageUrl: "/tokens/stake.svg",
               coinGeckoId: "pool:ustake",
               isStakeCurrency: true,
             },
@@ -3480,7 +3480,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "nUSDC",
               coinMinimalDenom: "uusdc",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/usdc.svg",
+              coinImageUrl: "/tokens/usdc.svg",
               coinGeckoId: "usd-coin",
               isFeeCurrency: true,
               gasPriceStep: {
@@ -3493,7 +3493,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "FRNZ",
               coinMinimalDenom: "ufrienzies",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/frnz.svg",
+              coinImageUrl: "/tokens/frnz.svg",
               coinGeckoId: "pool:frnz",
             },
           ],
@@ -3514,7 +3514,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "WHALE",
               coinMinimalDenom: "uwhale",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/white-whale.svg",
+              coinImageUrl: "/tokens/white-whale.svg",
               coinGeckoId: "pool:uwhale",
               isStakeCurrency: true,
               isFeeCurrency: true,
@@ -3542,7 +3542,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "FLIX",
               coinMinimalDenom: "uflix",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/flix.svg",
+              coinImageUrl: "/tokens/flix.svg",
               coinGeckoId: "pool:uflix",
               isStakeCurrency: true,
               isFeeCurrency: true,
@@ -3570,7 +3570,7 @@ const chainInfos = IS_TESTNET
               coinDenom: "BLZ",
               coinMinimalDenom: "ubnt",
               coinDecimals: 6,
-              coinImageUrl: "https://app.osmosis.zone/tokens/bluzelle.svg",
+              coinImageUrl: "/tokens/bluzelle.svg",
               coinGeckoId: "pool:ubnt",
               isStakeCurrency: true,
               isFeeCurrency: true,
@@ -3603,7 +3603,7 @@ chainInfos.push({
     coinMinimalDenom: "uaxl",
     coinDecimals: 6,
     coinGeckoId: "axelar",
-    coinImageUrl: "https://app.osmosis.zone/tokens/axl.svg",
+    coinImageUrl: "/tokens/axl.svg",
   },
   bip44: {
     coinType: 118,
@@ -3616,14 +3616,14 @@ chainInfos.push({
       coinDecimals: 6,
       // coinGeckoId: "axelar",
       coinGeckoId: "pool:uaxl",
-      coinImageUrl: "https://app.osmosis.zone/tokens/axl.svg",
+      coinImageUrl: "/tokens/axl.svg",
     },
     {
       coinDenom: IS_TESTNET ? "aUSDC" : "USDC",
       coinMinimalDenom: IS_TESTNET ? "uausdc" : "uusdc",
       coinDecimals: 6,
       coinGeckoId: IS_TESTNET ? "usd-coin" : "usd-coin",
-      coinImageUrl: "https://app.osmosis.zone/tokens/usdc.svg",
+      coinImageUrl: "/tokens/usdc.svg",
       pegMechanism: "collateralized",
     },
     {
@@ -3631,7 +3631,7 @@ chainInfos.push({
       coinMinimalDenom: "frax-wei",
       coinDecimals: 18,
       coinGeckoId: "frax",
-      coinImageUrl: "https://app.osmosis.zone/tokens/frax.svg",
+      coinImageUrl: "/tokens/frax.svg",
       pegMechanism: "hybrid",
     },
     {
@@ -3640,7 +3640,7 @@ chainInfos.push({
       coinDecimals: 6,
       // coinGeckoId: "tether",
       coinGeckoId: "pool:uusdt.grv",
-      coinImageUrl: "https://app.osmosis.zone/tokens/usdt.svg",
+      coinImageUrl: "/tokens/usdt.svg",
       pegMechanism: "collateralized",
     },
     {
@@ -3649,7 +3649,7 @@ chainInfos.push({
       coinDecimals: 18,
       // coinGeckoId: "dai",
       coinGeckoId: "pool:dai-wei",
-      coinImageUrl: "https://app.osmosis.zone/tokens/dai.svg",
+      coinImageUrl: "/tokens/dai.svg",
       pegMechanism: "collateralized",
     },
     {
@@ -3658,7 +3658,7 @@ chainInfos.push({
       coinDecimals: 18,
       // coinGeckoId: "weth",
       coinGeckoId: "pool:weth-wei",
-      coinImageUrl: "https://app.osmosis.zone/tokens/eth-white.svg",
+      coinImageUrl: "/tokens/eth-white.svg",
     },
     {
       coinDenom: "WBTC",
@@ -3666,7 +3666,7 @@ chainInfos.push({
       coinDecimals: 8,
       // coinGeckoId: "wrapped-bitcoin",
       coinGeckoId: "pool:wbtc-satoshi",
-      coinImageUrl: "https://app.osmosis.zone/tokens/wbtc.png",
+      coinImageUrl: "/tokens/wbtc.png",
     },
     {
       coinDenom: "LINK",
@@ -3674,7 +3674,7 @@ chainInfos.push({
       coinDecimals: 18,
       // coinGeckoId: "chainlink",
       coinGeckoId: "pool:link-wei",
-      coinImageUrl: "https://app.osmosis.zone/tokens/link.svg",
+      coinImageUrl: "/tokens/link.svg",
     },
     {
       coinDenom: "FIL",
@@ -3682,28 +3682,28 @@ chainInfos.push({
       coinDecimals: 18,
       //coinGeckoId: "filecoin",
       coinGeckoId: "pool:wfil-wei",
-      coinImageUrl: "https://app.osmosis.zone/tokens/fil.svg",
+      coinImageUrl: "/tokens/fil.svg",
     },
     {
       coinDenom: "AAVE",
       coinMinimalDenom: "aave-wei",
       coinDecimals: 18,
       coinGeckoId: "aave",
-      coinImageUrl: "https://app.osmosis.zone/tokens/aave.svg",
+      coinImageUrl: "/tokens/aave.svg",
     },
     {
       coinDenom: "APE",
       coinMinimalDenom: "ape-wei",
       coinDecimals: 18,
       coinGeckoId: "apecoin",
-      coinImageUrl: "https://app.osmosis.zone/tokens/ape.svg",
+      coinImageUrl: "/tokens/ape.svg",
     },
     {
       coinDenom: "AXS",
       coinMinimalDenom: "axs-wei",
       coinDecimals: 18,
       coinGeckoId: "axie-infinity",
-      coinImageUrl: "https://app.osmosis.zone/tokens/axs.svg",
+      coinImageUrl: "/tokens/axs.svg",
     },
     {
       coinDenom: "MKR",
@@ -3711,49 +3711,49 @@ chainInfos.push({
       coinDecimals: 18,
       // coinGeckoId: "maker",
       coinGeckoId: "pool:mkr-wei",
-      coinImageUrl: "https://app.osmosis.zone/tokens/mkr.svg",
+      coinImageUrl: "/tokens/mkr.svg",
     },
     {
       coinDenom: "RAI",
       coinMinimalDenom: "rai-wei",
       coinDecimals: 18,
       coinGeckoId: "rai",
-      coinImageUrl: "https://app.osmosis.zone/tokens/rai.svg",
+      coinImageUrl: "/tokens/rai.svg",
     },
     {
       coinDenom: "SHIB",
       coinMinimalDenom: "shib-wei",
       coinDecimals: 18,
       coinGeckoId: "shiba-inu",
-      coinImageUrl: "https://app.osmosis.zone/tokens/shib.svg",
+      coinImageUrl: "/tokens/shib.svg",
     },
     {
       coinDenom: "stETH",
       coinMinimalDenom: "steth-wei",
       coinDecimals: 18,
       coinGeckoId: "staked-ether",
-      coinImageUrl: "https://app.osmosis.zone/tokens/steth.svg",
+      coinImageUrl: "/tokens/steth.svg",
     },
     {
       coinDenom: "UNI",
       coinMinimalDenom: "uni-wei",
       coinDecimals: 18,
       coinGeckoId: "uniswap",
-      coinImageUrl: "https://app.osmosis.zone/tokens/uni.svg",
+      coinImageUrl: "/tokens/uni.svg",
     },
     {
       coinDenom: "XCN",
       coinMinimalDenom: "xcn-wei",
       coinDecimals: 18,
       coinGeckoId: "chain-2",
-      coinImageUrl: "https://app.osmosis.zone/tokens/xcn.svg",
+      coinImageUrl: "/tokens/xcn.svg",
     },
     {
       coinDenom: "GLMR",
       coinMinimalDenom: IS_TESTNET ? "wdev-wei" : "wglmr-wei",
       coinDecimals: 18,
       coinGeckoId: "wrapped-moonbeam",
-      coinImageUrl: "https://app.osmosis.zone/tokens/glmr.svg",
+      coinImageUrl: "/tokens/glmr.svg",
     },
     {
       coinDenom: "DOT",
@@ -3761,7 +3761,7 @@ chainInfos.push({
       coinDecimals: 10,
       //coinGeckoId: "polkadot",
       coinGeckoId: "pool:dotplanck.axl",
-      coinImageUrl: "https://app.osmosis.zone/tokens/dot.svg",
+      coinImageUrl: "/tokens/dot.svg",
     },
     {
       coinDenom: "BNB",
@@ -3769,7 +3769,7 @@ chainInfos.push({
       coinDecimals: 18,
       //coinGeckoId: "wbnb",
       coinGeckoId: "pool:wbnbwei.axl",
-      coinImageUrl: "https://app.osmosis.zone/tokens/bnb.svg",
+      coinImageUrl: "/tokens/bnb.svg",
     },
     {
       coinDenom: "MATIC",
@@ -3777,7 +3777,7 @@ chainInfos.push({
       coinDecimals: 18,
       //coinGeckoId: "wmatic",
       coinGeckoId: "pool:wmaticwei.axl",
-      coinImageUrl: "https://app.osmosis.zone/tokens/matic-purple.svg",
+      coinImageUrl: "/tokens/matic-purple.svg",
     },
     {
       coinDenom: "BUSD",
@@ -3785,7 +3785,7 @@ chainInfos.push({
       coinDecimals: 18,
       //coinGeckoId: "binance-usd",
       coinGeckoId: "pool:busdwei.axl",
-      coinImageUrl: "https://app.osmosis.zone/tokens/busd.svg",
+      coinImageUrl: "/tokens/busd.svg",
     },
     {
       coinDenom: "AVAX",
@@ -3793,7 +3793,7 @@ chainInfos.push({
       coinDecimals: 18,
       //coinGeckoId: "avalanche-2",
       coinGeckoId: "pool:wavaxwei.axl",
-      coinImageUrl: "https://app.osmosis.zone/tokens/avax.svg",
+      coinImageUrl: "/tokens/avax.svg",
     },
     {
       coinDenom: "FTM",
@@ -3801,14 +3801,14 @@ chainInfos.push({
       coinDecimals: 18,
       //coinGeckoId: "fantom",
       coinGeckoId: "pool:wftm-wei",
-      coinImageUrl: "https://app.osmosis.zone/tokens/ftm.svg",
+      coinImageUrl: "/tokens/ftm.svg",
     },
     {
       coinDenom: "polygon.USDC",
       coinMinimalDenom: "polygon-uusdc",
       coinDecimals: 6,
       coinGeckoId: "usd-coin",
-      coinImageUrl: "https://app.osmosis.zone/tokens/polygon.usdc.svg",
+      coinImageUrl: "/tokens/polygon.usdc.svg",
       pegMechanism: "collateralized",
     },
     {
@@ -3816,7 +3816,7 @@ chainInfos.push({
       coinMinimalDenom: "avalanche-uusdc",
       coinDecimals: 6,
       coinGeckoId: "usd-coin",
-      coinImageUrl: "https://app.osmosis.zone/tokens/avalanche.usdc.svg",
+      coinImageUrl: "/tokens/avalanche.usdc.svg",
       pegMechanism: "collateralized",
     },
     {
@@ -3824,14 +3824,14 @@ chainInfos.push({
       coinMinimalDenom: "arb-wei",
       coinDecimals: 18,
       coinGeckoId: "pool:arb",
-      coinImageUrl: "https://app.osmosis.zone/tokens/arb.svg",
+      coinImageUrl: "/tokens/arb.svg",
     },
     {
       coinDenom: "PEPE",
       coinMinimalDenom: "pepe-wei",
       coinDecimals: 18,
       coinGeckoId: "pool:pepe",
-      coinImageUrl: "https://app.osmosis.zone/tokens/pepe.svg",
+      coinImageUrl: "/tokens/pepe.svg",
     },
   ],
   feeCurrencies: [
@@ -3840,7 +3840,7 @@ chainInfos.push({
       coinMinimalDenom: "uaxl",
       coinDecimals: 6,
       coinGeckoId: "axelar",
-      coinImageUrl: "https://app.osmosis.zone/tokens/axl.svg",
+      coinImageUrl: "/tokens/axl.svg",
     },
   ],
   gasPriceStep: IS_TESTNET

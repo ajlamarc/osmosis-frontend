@@ -5,6 +5,7 @@ import { FunctionComponent } from "react";
 import { truncateString } from "../../utils/string";
 import { PoolAssetInfo } from "../assets";
 import { CustomClasses, Metric } from "../types";
+import loader from "../../loader";
 
 /** For displaying a token and it's balance, or a pool overview. */
 export const AssetCard: FunctionComponent<
@@ -56,13 +57,20 @@ export const AssetCard: FunctionComponent<
 
                   return (
                     <div key={index} className="h-[20px] w-[20px]">
-                      <Image alt="asset" src={src} height={20} width={20} />
+                      <Image
+                        loader={loader}
+                        alt="asset"
+                        src={src}
+                        height={20}
+                        width={20}
+                      />
                     </div>
                   );
                 })
               ) : (
                 <div className="flex h-[2.125rem] w-[2.125rem] shrink-0 items-center justify-center overflow-hidden">
                   <Image
+                    loader={loader}
                     alt="asset"
                     src={coinImageUrl}
                     height={20}

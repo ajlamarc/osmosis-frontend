@@ -23,6 +23,7 @@ import IconButton from "../buttons/icon-button";
 import { MainMenu } from "../main-menu";
 import { Popover } from "../popover";
 import { CustomClasses, MainLayoutMenu } from "../types";
+import loader from "../../loader";
 
 export const NavBar: FunctionComponent<
   {
@@ -236,22 +237,24 @@ const WalletInfo: FunctionComponent<
           <div className="h-8 w-8 shrink-0 overflow-hidden rounded-[7px] bg-osmoverse-700 group-hover:bg-gradient-positive">
             {profileStore.currentAvatar === "ammelia" ? (
               <Image
+                loader={loader}
                 alt="Wosmongton profile"
-                src="https://app.osmosis.zone/images/profile-ammelia.png"
+                src="/images/profile-ammelia.png"
                 height={32}
                 width={32}
               />
             ) : (
               <Image
+                loader={loader}
                 alt="Wosmongton profile"
-                src="https://app.osmosis.zone/images/profile-woz.png"
+                src="/images/profile-woz.png"
                 height={32}
                 width={32}
               />
             )}
           </div>
 
-          <div className="flex w-full  flex-col truncate text-right leading-tight">
+          <div className="flex w-full flex-col truncate text-right leading-tight">
             <span className="body2 font-bold leading-4" title={icnsName}>
               {Boolean(icnsName)
                 ? formatICNSName(icnsName)

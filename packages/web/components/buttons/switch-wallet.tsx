@@ -3,6 +3,7 @@ import { FunctionComponent } from "react";
 
 import { Disableable } from "../types";
 import { ButtonProps } from "./types";
+import loader from "../../loader";
 
 export const SwitchWalletButton: FunctionComponent<
   ButtonProps & Disableable & { selectedWalletIconUrl: string }
@@ -19,8 +20,9 @@ export const SwitchWalletButton: FunctionComponent<
       width={14}
     />
     <Image
+      loader={loader}
       alt="switch icon"
-      src="https://app.osmosis.zone/icons/left-right.svg"
+      src="/icons/left-right.svg"
       height={14}
       width={14}
     />

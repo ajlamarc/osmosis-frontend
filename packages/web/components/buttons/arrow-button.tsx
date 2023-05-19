@@ -6,6 +6,7 @@ import {
   ElementType,
   forwardRef,
 } from "react";
+import loader from "../../loader";
 
 export const ArrowButton = forwardRef<
   HTMLButtonElement | HTMLAnchorElement,
@@ -26,8 +27,9 @@ export const ArrowButton = forwardRef<
     >
       {props.children}
       <Image
+        loader={loader}
         alt="earn more"
-        src="https://app.osmosis.zone/icons/arrow-right.svg"
+        src="/icons/arrow-right.svg"
         height={24}
         width={24}
       />

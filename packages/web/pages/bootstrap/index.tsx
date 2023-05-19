@@ -9,6 +9,7 @@ import React, { FunctionComponent } from "react";
 
 import { PromotedLBPPoolIds } from "../../config";
 import { useStore } from "../../stores";
+import loader from "../../loader";
 
 const BootstrapPage: NextPage = observer(() => {
   return (
@@ -144,6 +145,7 @@ const SynthesisItem: FunctionComponent<{
       <section className="mb-5 flex items-center">
         <div className="mx-4 w-fit">
           <Image
+            loader={loader}
             alt="image"
             src={baseCurrency?.coinImageUrl ?? "/images/bubbles.svg"}
             height={80}

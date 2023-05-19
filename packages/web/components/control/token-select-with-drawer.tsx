@@ -11,6 +11,7 @@ import { useAmplitudeAnalytics, useWindowSize } from "../../hooks";
 import { useStore } from "../../stores";
 import { Icon } from "../assets";
 import { TokenSelectDrawer } from "../drawers/token-select-drawer";
+import loader from "../../loader";
 
 /** Will display balances if provided `CoinPretty` objects. Assumes denoms are unique. */
 export const TokenSelectWithDrawer: FunctionComponent<{
@@ -130,6 +131,7 @@ export const TokenSelectWithDrawer: FunctionComponent<{
             {selectedCurrency.coinImageUrl && (
               <div className="mr-1 h-[50px] w-[50px] shrink-0 overflow-hidden rounded-full md:h-7 md:w-7">
                 <Image
+                  loader={loader}
                   src={selectedCurrency.coinImageUrl}
                   alt="token icon"
                   width={isMobile ? 30 : 50}

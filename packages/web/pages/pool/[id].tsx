@@ -46,6 +46,7 @@ import {
   TradeTokens,
 } from "../../modals";
 import { useStore } from "../../stores";
+import loader from "../../loader";
 
 const E = EventName.PoolDetail;
 
@@ -465,8 +466,9 @@ const Pool: FunctionComponent = observer(() => {
                 {pool?.type === "stable" && (
                   <div className="body2 text-gradient-positive flex items-center gap-1.5">
                     <Image
+                      loader={loader}
                       alt=""
-                      src="https://app.osmosis.zone/icons/stableswap-pool.svg"
+                      src="/icons/stableswap-pool.svg"
                       height={24}
                       width={24}
                     />

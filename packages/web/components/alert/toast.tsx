@@ -4,6 +4,7 @@ import { useTranslation } from "react-multi-lang";
 import { toast, ToastOptions } from "react-toastify";
 
 import { Alert, ToastType } from "./types";
+import loader from "../../loader";
 
 export function displayToast(
   alert: Alert,
@@ -26,8 +27,9 @@ export function displayToast(
           className="absolute -top-2 -left-2 h-6 w-6 hover:opacity-75 md:top-2 md:h-5 md:w-5"
         >
           <Image
+            loader={loader}
             alt="close"
-            src="https://app.osmosis.zone/icons/close-circle.svg"
+            src="/icons/close-circle.svg"
             height={32}
             width={32}
           />
@@ -56,8 +58,9 @@ const LoadingToast: FunctionComponent<Alert> = ({ message, caption }) => {
     <div className="flex items-center gap-3 md:gap-2">
       <div className="flex h-8 w-8 shrink-0 animate-spin items-center">
         <Image
+          loader={loader}
           alt="loading"
-          src="https://app.osmosis.zone/icons/loading-blue.svg"
+          src="/icons/loading-blue.svg"
           height={32}
           width={32}
         />
@@ -76,8 +79,9 @@ const ErrorToast: FunctionComponent<Alert> = ({ message, caption }) => {
     <div className="flex items-center gap-3 md:gap-2">
       <div className="h-8 w-8 shrink-0">
         <Image
+          loader={loader}
           alt="failed"
-          src="https://app.osmosis.zone/icons/error-x.svg"
+          src="/icons/error-x.svg"
           height={32}
           width={32}
         />
@@ -100,8 +104,9 @@ const SuccessToast: FunctionComponent<Alert> = ({
     <div className="flex items-center gap-3 md:gap-2">
       <div className="h-8 w-8 shrink-0">
         <Image
+          loader={loader}
           alt="b"
-          src="https://app.osmosis.zone/icons/check-circle.svg"
+          src="/icons/check-circle.svg"
           height={32}
           width={32}
         />
@@ -117,8 +122,9 @@ const SuccessToast: FunctionComponent<Alert> = ({
             {t(learnMoreUrlCaption ?? "Learn more")}
             <div className="mb-0.75 ml-2 inline-block">
               <Image
+                loader={loader}
                 alt="link"
-                src="https://app.osmosis.zone/icons/link-deco.svg"
+                src="/icons/link-deco.svg"
                 height={12}
                 width={12}
               />

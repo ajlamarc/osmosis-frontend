@@ -4,6 +4,7 @@ import React, { FunctionComponent, useState } from "react";
 import { UNSTABLE_MSG } from "../../../config";
 import { InfoTooltip } from "../../tooltip";
 import { AssetCell as Cell } from "./types";
+import loader from "../../../loader";
 
 export const AssetNameCell: FunctionComponent<Partial<Cell>> = ({
   coinDenom,
@@ -23,11 +24,10 @@ export const AssetNameCell: FunctionComponent<Partial<Cell>> = ({
       {showStar || isFavorite ? (
         <div className="cursor-pointer">
           <Image
+            loader={loader}
             alt="star"
             onClick={onToggleFavorite}
-            src={`https://app.osmosis.zone/icons/star${
-              isFavorite ? "-filled" : ""
-            }.svg`}
+            src={`/icons/star${isFavorite ? "-filled" : ""}.svg`}
             height={24}
             width={24}
           />
@@ -40,6 +40,7 @@ export const AssetNameCell: FunctionComponent<Partial<Cell>> = ({
           <div>
             {coinImageUrl && (
               <Image
+                loader={loader}
                 alt={coinDenom}
                 src={coinImageUrl}
                 height={40}

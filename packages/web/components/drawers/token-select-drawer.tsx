@@ -26,6 +26,7 @@ import { useStore } from "../../stores";
 import { Icon } from "../assets";
 import IconButton from "../buttons/icon-button";
 import { SearchBox } from "../input";
+import loader from "../../loader";
 
 function getJustDenom(coinDenom: string) {
   return coinDenom.split(" ").slice(0, 1).join(" ") ?? "";
@@ -267,6 +268,7 @@ export const TokenSelectDrawer: FunctionComponent<{
                         {coinImageUrl && (
                           <div className="h-[24px] w-[24px] rounded-full">
                             <Image
+                              loader={loader}
                               src={coinImageUrl}
                               alt="token icon"
                               width={24}
@@ -335,6 +337,7 @@ export const TokenSelectDrawer: FunctionComponent<{
                         {coinImageUrl && (
                           <div className="mr-4 h-8 w-8 rounded-full">
                             <Image
+                              loader={loader}
                               src={coinImageUrl}
                               alt="token icon"
                               width={32}

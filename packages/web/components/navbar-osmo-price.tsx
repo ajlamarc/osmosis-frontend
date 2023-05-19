@@ -15,6 +15,7 @@ import { CreditCardIcon } from "./assets/credit-card-icon";
 import { Button } from "./buttons";
 import { Sparkline } from "./chart/sparkline";
 import SkeletonLoader from "./skeleton-loader";
+import loader from "../loader";
 
 /**
  * Get chart data.
@@ -72,11 +73,12 @@ const NavbarOsmoPrice = observer(() => {
 
   return (
     <div className="flex flex-col gap-6 px-2">
-      <div className="flex items-center justify-between  px-2">
+      <div className="flex items-center justify-between px-2">
         <SkeletonLoader isLoaded={osmoPrice.isReady} className="min-w-[70px]">
           <div className="flex items-center gap-1">
             <div className="h-[20px] w-[20px]">
               <Image
+                loader={loader}
                 src={osmoCurrency.coinImageUrl!}
                 alt="Osmo icon"
                 width={20}

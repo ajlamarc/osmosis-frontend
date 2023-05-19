@@ -5,6 +5,7 @@ import { useStore } from "../../stores";
 import { Button } from "../../components/buttons";
 import { useKeplr } from "./hook";
 import { t } from "react-multi-lang";
+import loader from "../../loader";
 
 /** FOR USE IN MODALS
  *
@@ -70,8 +71,9 @@ export function useConnectWalletModalRedirect(
         >
           <h6 className="flex items-center gap-3">
             <Image
+              loader={loader}
               alt="wallet"
-              src="https://app.osmosis.zone/icons/wallet.svg"
+              src="/icons/wallet.svg"
               height={24}
               width={24}
             />

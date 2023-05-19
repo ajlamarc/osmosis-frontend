@@ -5,6 +5,7 @@ import React, { FunctionComponent, useEffect, useRef, useState } from "react";
 import { Icon } from "../assets";
 import { CustomClasses } from "../types";
 import { NumberSelectProps } from "./types";
+import loader from "../../loader";
 
 interface Props extends Omit<NumberSelectProps, "placeholder">, CustomClasses {
   /** Allow user to edit page number directly. Off by default. */
@@ -128,13 +129,15 @@ export const PageList: FunctionComponent<Props> = ({
         >
           {isEditingText ? (
             <Image
+              loader={loader}
               alt="accept"
-              src="https://app.osmosis.zone/icons/checkmark-circle.svg"
+              src="/icons/checkmark-circle.svg"
               height={22}
               width={22}
             />
           ) : (
             <Icon
+              loader={loader}
               id="chevron-right"
               className="text-osmoverse-200"
               height={18}

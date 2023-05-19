@@ -4,6 +4,7 @@ import { FunctionComponent } from "react";
 
 import { CustomClasses, Disableable } from "../types";
 import { ButtonProps } from "./types";
+import loader from "../../loader";
 
 export const CloseButton: FunctionComponent<
   ButtonProps & CustomClasses & Disableable
@@ -19,8 +20,9 @@ export const CloseButton: FunctionComponent<
     }}
   >
     <Image
+      loader={loader}
       alt="clear"
-      src="https://app.osmosis.zone/icons/close.svg"
+      src="/icons/close.svg"
       height={22}
       width={18}
     />

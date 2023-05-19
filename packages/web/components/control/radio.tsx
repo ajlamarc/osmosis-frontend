@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FunctionComponent } from "react";
 
 import { CustomClasses, Disableable } from "../types";
-
+import loader from "../../loader";
 interface Props extends Disableable, CustomClasses {
   /**
    * The value that will be emitted by this radio button.
@@ -50,8 +50,9 @@ export const Radio: FunctionComponent<Props> = ({
             )}
           >
             <Image
+              loader={loader}
               alt=""
-              src="https://app.osmosis.zone/icons/dot.svg"
+              src="/icons/dot.svg"
               height={20}
               width={20}
             />

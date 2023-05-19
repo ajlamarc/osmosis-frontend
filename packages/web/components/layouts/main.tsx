@@ -9,6 +9,7 @@ import { MainMenu } from "../main-menu";
 import { NavBar } from "../navbar";
 import NavbarOsmoPrice from "../navbar-osmo-price";
 import { MainLayoutMenu } from "../types";
+import loader from "../../loader";
 
 export const MainLayout: FunctionComponent<{
   menus: MainLayoutMenu[];
@@ -63,12 +64,9 @@ const OsmosisFullLogo: FunctionComponent<{
   onClick?: () => void;
 }> = ({ width = 178, height = 48, onClick }) => (
   <Image
+    loader={loader}
     className="hover:cursor-pointer"
-    src={
-      IS_FRONTIER
-        ? "https://app.osmosis.zone/osmosis-logo-frontier.svg"
-        : "https://app.osmosis.zone/osmosis-logo-main.svg"
-    }
+    src={IS_FRONTIER ? "/osmosis-logo-frontier.svg" : "/osmosis-logo-main.svg"}
     alt="osmosis logo"
     width={width}
     height={height}

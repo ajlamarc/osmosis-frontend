@@ -16,6 +16,7 @@ import { useStore } from "../../stores";
 import { truncateString } from "../../utils/string";
 import { Breakpoint, CustomClasses } from "../types";
 import { BaseCell, Table } from ".";
+import loader from "../../loader";
 
 type History = {
   txHash: string;
@@ -151,8 +152,9 @@ const TxHashDisplayCell: FunctionComponent<
     >
       {truncateString(value, isMobile ? 4 : 8)}{" "}
       <Image
+        loader={loader}
         alt="external link"
-        src="https://app.osmosis.zone/icons/link-deco.svg"
+        src="/icons/link-deco.svg"
         width={12}
         height={12}
       />
@@ -177,8 +179,9 @@ const StatusDisplayCell: FunctionComponent<
       <div className="flex items-center gap-2">
         <div className="h-6 w-6 animate-spin">
           <Image
+            loader={loader}
             alt="loading"
-            src="https://app.osmosis.zone/icons/loading-blue.svg"
+            src="/icons/loading-blue.svg"
             width={24}
             height={24}
           />
@@ -193,8 +196,9 @@ const StatusDisplayCell: FunctionComponent<
       return (
         <div className="flex items-center gap-2">
           <Image
+            loader={loader}
             alt="success"
-            src="https://app.osmosis.zone/icons/check-circle.svg"
+            src="/icons/check-circle.svg"
             width={24}
             height={24}
           />
@@ -206,8 +210,9 @@ const StatusDisplayCell: FunctionComponent<
         <div className="flex items-center gap-2">
           <div className="h-6 w-6 animate-spin">
             <Image
+              loader={loader}
               alt="loading"
-              src="https://app.osmosis.zone/icons/loading-blue.svg"
+              src="/icons/loading-blue.svg"
               width={24}
               height={24}
             />
@@ -219,8 +224,9 @@ const StatusDisplayCell: FunctionComponent<
       return (
         <div className="flex items-center gap-2">
           <Image
+            loader={loader}
             alt="failed"
-            src="https://app.osmosis.zone/icons/error-x.svg"
+            src="/icons/error-x.svg"
             width={24}
             height={24}
           />
@@ -232,8 +238,9 @@ const StatusDisplayCell: FunctionComponent<
         <div className="flex items-center gap-2">
           <div className="h-6 w-6 animate-spin">
             <Image
+              loader={loader}
               alt="loading"
-              src="https://app.osmosis.zone/icons/loading-blue.svg"
+              src="/icons/loading-blue.svg"
               width={24}
               height={24}
             />
@@ -247,8 +254,9 @@ const StatusDisplayCell: FunctionComponent<
       return (
         <div className="flex items-center gap-2">
           <Image
+            loader={loader}
             alt="failed"
-            src="https://app.osmosis.zone/icons/error-x.svg"
+            src="/icons/error-x.svg"
             width={24}
             height={24}
           />

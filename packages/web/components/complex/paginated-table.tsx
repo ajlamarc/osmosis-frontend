@@ -76,7 +76,7 @@ const PaginatedTable = ({
           return (
             <Link
               key={row.original.pool.id}
-              href={`/pool/${row.original.pool.id}`}
+              href={`https://app.osmosis.zone/pool/${row.original.pool.id}`}
             >
               <a
                 style={{
@@ -163,13 +163,17 @@ const PaginatedTable = ({
               key={row.id}
               className="transition-colors focus-within:bg-osmoverse-700 focus-within:outline-none hover:cursor-pointer hover:bg-osmoverse-800"
               ref={i === virtualRows.length - 1 ? intersectionRef : null}
-              onClick={() => router.push(`/pool/${row.original.pool.id}`)}
+              onClick={() =>
+                router.push(
+                  `https://app.osmosis.zone/pool/${row.original.pool.id}`
+                )
+              }
             >
               {row.getVisibleCells().map((cell) => {
                 return (
                   <td key={cell.id} onClick={(e) => e.stopPropagation()}>
                     <Link
-                      href={`/pool/${row.original.pool.id}`}
+                      href={`https://app.osmosis.zone/pool/${row.original.pool.id}`}
                       key={virtualRow.index}
                     >
                       <a className="focus:outline-none">

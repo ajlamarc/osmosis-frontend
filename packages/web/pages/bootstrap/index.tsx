@@ -138,7 +138,7 @@ const SynthesisItem: FunctionComponent<{
       onClick={(e) => {
         e.preventDefault();
 
-        router.push(`/pool/${poolId}`);
+        router.push(`https://app.osmosis.zone/pool/${poolId}`);
       }}
     >
       <section className="mb-5 flex items-center">
@@ -151,7 +151,7 @@ const SynthesisItem: FunctionComponent<{
           />
         </div>
         <div className="flex flex-col justify-between md:w-full md:flex-row md:items-center">
-          <div className="mr-2 mb-3 flex flex-col md:mb-0">
+          <div className="mb-3 mr-2 flex flex-col md:mb-0">
             <p className="mb-2 text-sm font-semibold text-white-mid">
               {pool.smoothWeightChange.initialPoolWeights
                 .map((w) => w.currency.coinDenom.toUpperCase())

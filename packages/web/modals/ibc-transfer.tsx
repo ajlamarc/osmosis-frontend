@@ -139,7 +139,7 @@ export const IbcTransferModal: FunctionComponent<ModalBaseProps & IbcTransfer> =
                   {
                     address: account.bech32Address,
                     networkName: chainStore.getChain(osmosisChainId).chainName,
-                    iconUrl: "/tokens/osmo.svg",
+                    iconUrl: "https://app.osmosis.zone/tokens/osmo.svg",
                   },
                   {
                     address: counterpartyAccount.bech32Address,
@@ -158,7 +158,7 @@ export const IbcTransferModal: FunctionComponent<ModalBaseProps & IbcTransfer> =
                   {
                     address: account.bech32Address,
                     networkName: chainStore.getChain(osmosisChainId).chainName,
-                    iconUrl: "/tokens/osmo.svg",
+                    iconUrl: "https://app.osmosis.zone/tokens/osmo.svg",
                   },
                 ]
           }

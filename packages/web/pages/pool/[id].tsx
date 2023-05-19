@@ -7,6 +7,7 @@ import {
 import classNames from "classnames";
 import { Duration } from "dayjs/plugin/duration";
 import { observer } from "mobx-react-lite";
+import { GetStaticPropsContext } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -48,6 +49,29 @@ import { useStore } from "../../stores";
 
 const E = EventName.PoolDetail;
 
+// export const getStaticPaths = async () => {
+//   const poolIds: Array<number> = Array.from(Array(2000).keys());
+//   const paths = poolIds.map((id) => {
+//     return { params: { id: id.toString() } };
+//   });
+
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// }
+
+// export const getStaticProps = async (context: GetStaticPropsContext) => {
+//   const id = context.params!.id;
+//   return {
+//     props: {
+//       id,
+//     },
+//   };
+// }
+
+// const Pool: FunctionComponent = ({ id }) => {
+// const poolId = id;
 const Pool: FunctionComponent = observer(() => {
   const router = useRouter();
   const {
@@ -538,7 +562,7 @@ const Pool: FunctionComponent = observer(() => {
               <span className="body2 text-osmoverse-300">
                 {t("pool.yourStats")}
               </span>
-              <div className="flex place-content-between  gap-6 sm:flex-col sm:items-start">
+              <div className="flex place-content-between gap-6 sm:flex-col sm:items-start">
                 <div className="flex shrink-0 flex-col gap-1">
                   <h4 className="text-osmoverse-100">
                     {poolDetail.userStats.totalShareValue.toString()}

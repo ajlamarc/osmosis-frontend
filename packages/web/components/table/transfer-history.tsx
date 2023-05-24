@@ -16,6 +16,7 @@ import { useStore } from "../../stores";
 import { truncateString } from "../../utils/string";
 import { Breakpoint, CustomClasses } from "../types";
 import { BaseCell, Table } from ".";
+import loader from "../../loader";
 
 type History = {
   txHash: string;
@@ -151,6 +152,7 @@ const TxHashDisplayCell: FunctionComponent<
     >
       {truncateString(value, isMobile ? 4 : 8)}{" "}
       <Image
+        loader={loader}
         alt="external link"
         src="/icons/link-deco.svg"
         width={12}
@@ -177,6 +179,7 @@ const StatusDisplayCell: FunctionComponent<
       <div className="flex items-center gap-2">
         <div className="h-6 w-6 animate-spin">
           <Image
+            loader={loader}
             alt="loading"
             src="/icons/loading-blue.svg"
             width={24}
@@ -193,6 +196,7 @@ const StatusDisplayCell: FunctionComponent<
       return (
         <div className="flex items-center gap-2">
           <Image
+            loader={loader}
             alt="success"
             src="/icons/check-circle.svg"
             width={24}
@@ -206,6 +210,7 @@ const StatusDisplayCell: FunctionComponent<
         <div className="flex items-center gap-2">
           <div className="h-6 w-6 animate-spin">
             <Image
+              loader={loader}
               alt="loading"
               src="/icons/loading-blue.svg"
               width={24}
@@ -218,7 +223,13 @@ const StatusDisplayCell: FunctionComponent<
     case "refunded":
       return (
         <div className="flex items-center gap-2">
-          <Image alt="failed" src="/icons/error-x.svg" width={24} height={24} />
+          <Image
+            loader={loader}
+            alt="failed"
+            src="/icons/error-x.svg"
+            width={24}
+            height={24}
+          />
           <span className="md:hidden">{t("assets.historyTable.refunded")}</span>
         </div>
       );
@@ -227,6 +238,7 @@ const StatusDisplayCell: FunctionComponent<
         <div className="flex items-center gap-2">
           <div className="h-6 w-6 animate-spin">
             <Image
+              loader={loader}
               alt="loading"
               src="/icons/loading-blue.svg"
               width={24}
@@ -241,7 +253,13 @@ const StatusDisplayCell: FunctionComponent<
     case "failed":
       return (
         <div className="flex items-center gap-2">
-          <Image alt="failed" src="/icons/error-x.svg" width={24} height={24} />
+          <Image
+            loader={loader}
+            alt="failed"
+            src="/icons/error-x.svg"
+            width={24}
+            height={24}
+          />
           <span className="md:hidden">
             {reason
               ? t("assets.historyTable.failedWithReason", {

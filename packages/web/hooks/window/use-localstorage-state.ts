@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+
+import { TomeContext } from "~/pages/_app";
 
 /** Stores and syncs to a value in `localStorage` at `key`.
  *  Will `JSON.stringify` and `JSON.parse` value of type `T`.
@@ -8,33 +10,35 @@ export function useLocalStorageState<T>(
   key: string,
   initialValue: T
 ): [T, (value: T) => void] {
+  const kv = useContext(TomeContext);
   const [storedValue, setStoredValue] = useState<T>(initialValue);
 
   // init from localstorage
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const rawItem = window.localStorage.getItem(key);
-
-      if (rawItem) {
-        try {
-          const item = JSON.parse(rawItem);
+    const getStoredValue = async () => {
+      if (typeof kv !== "undefined") {
+        const item = await kv.get(key);
+        if (item) {
+          // @ts-ignore
           setStoredValue(item);
-        } catch {
-          console.error("Problem parsing localStorage item at key: ", key);
         }
       }
-    }
-  }, [key, setStoredValue]);
+    };
+    getStoredValue();
+  }, [key, setStoredValue, kv]);
 
   const setValue = (value: T) => {
-    try {
-      if (typeof window !== "undefined" && key) {
-        window.localStorage.setItem(key, JSON.stringify(value));
-      }
-
-      setStoredValue(value);
-    } catch (error) {
-      console.error(error);
+    if (typeof kv !== "undefined" && key) {
+      //  @ts-ignore
+      kv.set(key, value)
+        .then((success) => {
+          if (success) {
+            setStoredValue(value);
+          } else {
+            console.error("Failed to set value in Urbit.");
+          }
+        })
+        .catch((error) => console.error(error));
     }
   };
   return [storedValue, setValue];

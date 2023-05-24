@@ -8,6 +8,7 @@ import { FunctionComponent } from "react";
 import { IS_FRONTIER } from "../config";
 import { useAmplitudeAnalytics } from "../hooks";
 import { MainLayoutMenu } from "./types";
+import loader from "../loader";
 
 export const MainMenu: FunctionComponent<{
   onClickItem?: () => void;
@@ -73,6 +74,7 @@ export const MainMenu: FunctionComponent<{
                   >
                     {typeof icon === "string" ? (
                       <Image
+                        loader={loader}
                         src={iconSelected ?? icon}
                         width={20}
                         height={20}
@@ -96,6 +98,7 @@ export const MainMenu: FunctionComponent<{
                   {!selectionTest && typeof link === "string" && (
                     <div className="ml-2">
                       <Image
+                        loader={loader}
                         src={
                           IS_FRONTIER
                             ? "/icons/link-deco-white.svg"

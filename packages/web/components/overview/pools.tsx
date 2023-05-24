@@ -10,6 +10,7 @@ import { useWindowSize } from "../../hooks";
 import { useStore } from "../../stores";
 import { Button } from "../buttons";
 import { Breakpoint, CustomClasses } from "../types";
+import loader from "../../loader";
 
 const REWARD_EPOCH_IDENTIFIER = "day";
 
@@ -85,6 +86,7 @@ export const PoolsOverview: FunctionComponent<
       </div>
       <div className="absolute right-0 -bottom-[0.025rem] h-[212px] overflow-clip rounded-br-[32px] 1.5xl:h-[200px] xl:h-[188px] md:h-[100px] xs:hidden">
         <Image
+          loader={loader}
           alt="lab machine"
           src="/images/lab-machine.svg"
           height={
@@ -116,6 +118,7 @@ export const PoolsOverview: FunctionComponent<
           <div className="flex items-center gap-3">
             {t("pools.createPool.title")}
             <Image
+              loader={loader}
               alt="right arrow"
               src="/icons/arrow-right-wosmongton-100.svg"
               height={24}

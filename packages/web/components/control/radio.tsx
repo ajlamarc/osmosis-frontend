@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FunctionComponent } from "react";
 
 import { CustomClasses, Disableable } from "../types";
-
+import loader from "../../loader";
 interface Props extends Disableable, CustomClasses {
   /**
    * The value that will be emitted by this radio button.
@@ -49,7 +49,13 @@ export const Radio: FunctionComponent<Props> = ({
               disabled ? "opacity-38 cursor-default" : null
             )}
           >
-            <Image alt="" src="/icons/dot.svg" height={20} width={20} />
+            <Image
+              loader={loader}
+              alt=""
+              src="/icons/dot.svg"
+              height={20}
+              width={20}
+            />
           </div>
         )}
         <input

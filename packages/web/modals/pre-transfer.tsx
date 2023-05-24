@@ -11,6 +11,7 @@ import { UNSTABLE_MSG } from "../config";
 import { useStore } from "../stores";
 import { useTranslation } from "react-multi-lang";
 import { observer } from "mobx-react-lite";
+import loader from "../loader";
 
 /** MOBILE: Pre transfer to select whether to deposit/withdraw */
 export const PreTransferModal: FunctionComponent<
@@ -87,6 +88,7 @@ export const PreTransferModal: FunctionComponent<
             >
               {t("assets.table.preTransfer.withdraw")}
               <Image
+                loader={loader}
                 alt="external transfer link"
                 src="/icons/external-link-white.svg"
                 height={8}
@@ -120,6 +122,7 @@ export const PreTransferModal: FunctionComponent<
             >
               {t("assets.table.preTransfer.deposit")}
               <Image
+                loader={loader}
                 alt="external transfer link"
                 src="/icons/external-link-white.svg"
                 height={8}

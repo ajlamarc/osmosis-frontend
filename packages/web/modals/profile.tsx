@@ -42,6 +42,7 @@ import { formatPretty } from "../utils/formatter";
 import { formatICNSName, getShortAddress } from "../utils/string";
 import { ModalBase, ModalBaseProps } from "./base";
 import { FiatOnrampSelectionModal } from "./fiat-on-ramp-selection";
+import loader from "../loader";
 
 const QRCode = dynamic(() => import("qrcode.react"));
 
@@ -195,6 +196,7 @@ export const ProfileModal: FunctionComponent<
             <div className="flex flex-col gap-[30px]">
               <div className="flex items-center gap-1.5">
                 <Image
+                  loader={loader}
                   src="/icons/profile-osmo.svg"
                   alt="Osmo icon"
                   width={24}
@@ -263,6 +265,7 @@ export const ProfileModal: FunctionComponent<
           <div className="mt-5 flex w-full flex-col gap-[30px] rounded-[20px] border border-osmoverse-700 bg-osmoverse-800 p-5">
             <div className="flex items-center gap-1.5">
               <Image
+                loader={loader}
                 src="/icons/profile-wallet.svg"
                 alt="Osmo icon"
                 width={24}
@@ -499,6 +502,7 @@ const WosmongtonAvatar = forwardRef<any, ComponentProps<typeof BaseAvatar>>(
         )}
       >
         <Image
+          loader={loader}
           alt="Wosmongton profile avatar"
           src="/images/profile-woz.png"
           width={140}
@@ -523,6 +527,7 @@ const AmmeliaAvatar = forwardRef<any, ComponentProps<typeof BaseAvatar>>(
         )}
       >
         <Image
+          loader={loader}
           alt="Wosmongton profile avatar"
           src="/images/profile-ammelia.png"
           width={140}

@@ -1,6 +1,7 @@
 import { AppCurrency, Currency } from "@keplr-wallet/types";
 import Image from "next/image";
 import { FunctionComponent } from "react";
+import loader from "../../loader";
 
 export const DenomImage: FunctionComponent<{
   denom: AppCurrency | Currency;
@@ -10,6 +11,7 @@ export const DenomImage: FunctionComponent<{
   <>
     {denom.coinImageUrl ? (
       <Image
+        loader={loader}
         src={denom.coinImageUrl}
         alt="token icon"
         width={size}

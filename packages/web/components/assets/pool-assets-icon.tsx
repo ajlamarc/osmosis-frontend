@@ -44,14 +44,14 @@ export const PoolAssetsIcon: FunctionComponent<Props> = ({
               }`}</div>
             ) : coinImageUrl ? (
               <img
-                src={coinImageUrl}
+                src={`https://app.osmosis.zone${coinImageUrl}`}
                 alt={coinDenom}
                 width={size === "md" ? 50 : 40}
                 height={size === "md" ? 50 : 40}
               />
             ) : (
               <img
-                src="/icons/question-mark.svg"
+                src="https://app.osmosis.zone/icons/question-mark.svg"
                 alt="no token icon"
                 width={size === "md" ? 50 : 40}
                 height={size === "md" ? 50 : 40}

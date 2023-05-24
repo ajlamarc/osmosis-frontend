@@ -217,7 +217,7 @@ const AxelarTransfer: FunctionComponent<
     const osmosisPath = {
       address: osmoIcnsName === "" ? bech32Address : osmoIcnsName,
       networkName: chainStore.osmosis.chainName,
-      iconUrl: "/tokens/osmo.svg",
+      iconUrl: "https://app.osmosis.zone/tokens/osmo.svg",
     };
     const counterpartyPath = {
       address: ethWalletClient.accountAddress || "",

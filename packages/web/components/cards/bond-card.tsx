@@ -23,6 +23,7 @@ import { FallbackImg, Icon } from "../assets";
 import { RightArrowIcon } from "../assets/right-arrow-icon";
 import { UnlockIcon } from "../assets/unlock-icon";
 import { Tooltip } from "../tooltip";
+import loader from "../../loader";
 
 export const BondCard: FunctionComponent<
   BondDuration & {
@@ -105,7 +106,13 @@ export const BondCard: FunctionComponent<
           </div>
           {splashImageSrc && (
             <div className="h-fit w-fit shrink-0">
-              <Image alt="splash" src={splashImageSrc} height={90} width={90} />
+              <Image
+                loader={loader}
+                alt="splash"
+                src={splashImageSrc}
+                height={90}
+                width={90}
+              />
             </div>
           )}
         </div>
@@ -290,6 +297,7 @@ const Drawer: FunctionComponent<{
                       </span>
                     ) : index < 2 ? (
                       <Image
+                        loader={loader}
                         alt="incentive icon"
                         src={coinImageUrl}
                         height={24}
@@ -374,8 +382,11 @@ const SuperfluidBreakdownRow: FunctionComponent<BondDuration["superfluid"]> = ({
           <FallbackImg
             className="rounded-full"
             alt="validator icon"
-            src={validatorLogoUrl ?? "/icons/superfluid-osmo.svg"}
-            fallbacksrc="/icons/profile.svg"
+            src={
+              validatorLogoUrl ??
+              "https://app.osmosis.zone/icons/superfluid-osmo.svg"
+            }
+            fallbacksrc="https://app.osmosis.zone/icons/profile.svg"
             height={20}
             width={20}
           />
@@ -425,11 +436,12 @@ const IncentiveBreakdownRow: FunctionComponent<
   return (
     <div className="flex place-content-between items-start">
       <div className="flex shrink-0 items-center gap-2">
-        <span className="subtitle1 text-white">
+        <span className="text-white subtitle1">
           +{apr.maxDecimals(0).toString()}
         </span>
         {dailyPoolReward.currency.coinImageUrl && (
           <Image
+            loader={loader}
             alt="token icon"
             src={dailyPoolReward.currency.coinImageUrl}
             height={20}
@@ -464,7 +476,7 @@ const SwapFeeBreakdownRow: FunctionComponent<{
   return (
     <div className="flex place-content-between items-start">
       <div className="flex items-center gap-2">
-        <span className="subtitle1 text-white">
+        <span className="text-white subtitle1">
           +{swapFeeApr.maxDecimals(0).toString()}
         </span>
       </div>

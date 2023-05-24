@@ -4,6 +4,7 @@ import { FunctionComponent } from "react";
 
 import { CustomClasses, Disableable } from "../types";
 import { ButtonProps } from "./types";
+import loader from "../../loader";
 
 export const CloseButton: FunctionComponent<
   ButtonProps & CustomClasses & Disableable
@@ -18,6 +19,12 @@ export const CloseButton: FunctionComponent<
       if (!disabled) onClick();
     }}
   >
-    <Image alt="clear" src="/icons/close.svg" height={22} width={18} />
+    <Image
+      loader={loader}
+      alt="clear"
+      src="/icons/close.svg"
+      height={22}
+      width={18}
+    />
   </div>
 );

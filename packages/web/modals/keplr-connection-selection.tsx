@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { FunctionComponent } from "react";
 import { ModalBase, ModalBaseProps } from "./base";
 import { useTranslation } from "react-multi-lang";
+import loader from "../loader";
 
 export const KeplrConnectionSelectModal: FunctionComponent<
   ModalBaseProps & {
@@ -34,6 +35,7 @@ export const KeplrConnectionSelectModal: FunctionComponent<
           }}
         >
           <Image
+            loader={loader}
             src="/images/keplr-logo.svg"
             alt="keplr logo"
             width={64}
@@ -43,6 +45,7 @@ export const KeplrConnectionSelectModal: FunctionComponent<
             <div className="flex items-center gap-2">
               <h6>{t("keplr.install")}</h6>
               <Image
+                loader={loader}
                 src="/icons/external-link-white.svg"
                 alt="external link"
                 width={14}
@@ -63,6 +66,7 @@ export const KeplrConnectionSelectModal: FunctionComponent<
           }}
         >
           <Image
+            loader={loader}
             src="/images/keplr-logo.svg"
             alt="keplr logo"
             width={64}
@@ -87,6 +91,7 @@ export const KeplrConnectionSelectModal: FunctionComponent<
         }}
       >
         <Image
+          loader={loader}
           src="/icons/walletconnect.svg"
           alt="wallet connect logo"
           width={64}

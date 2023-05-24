@@ -37,6 +37,7 @@ import { tError } from "../localization";
 import { Popover } from "../popover";
 import { InfoTooltip } from "../tooltip";
 import TradeRoute from "./trade-route";
+import loader from "../../loader";
 
 export const TradeClipboard: FunctionComponent<{
   // IMPORTANT: Pools should be memoized!!
@@ -866,9 +867,10 @@ export const TradeClipboard: FunctionComponent<{
                   )}
                 >
                   <Image
+                    loader={loader}
                     width={isMobile ? 16 : 20}
                     height={isMobile ? 16 : 20}
-                    src={"/icons/down-arrow.svg"}
+                    src="/icons/down-arrow.svg"
                     alt="switch"
                   />
                 </div>
@@ -882,9 +884,10 @@ export const TradeClipboard: FunctionComponent<{
                   )}
                 >
                   <Image
+                    loader={loader}
                     width={isMobile ? 16 : 20}
                     height={isMobile ? 16 : 20}
-                    src={"/icons/swap.svg"}
+                    src="/icons/swap.svg"
                     alt="switch"
                   />
                 </div>
@@ -1015,6 +1018,7 @@ export const TradeClipboard: FunctionComponent<{
                     "transition-opacity",
                     showPriceImpactWarning ? "opacity-100" : "opacity-0"
                   )}
+                  loader={loader}
                   alt="alert circle"
                   src="/icons/alert-circle.svg"
                   height={24}
@@ -1156,6 +1160,7 @@ export const TradeClipboard: FunctionComponent<{
             ) : (
               <h6 className="flex items-center gap-3">
                 <Image
+                  loader={loader}
                   alt="wallet"
                   src="/icons/wallet.svg"
                   height={24}

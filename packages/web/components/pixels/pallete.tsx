@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import { Button } from "../buttons";
+import loader from "../../loader";
 
 type PaletteProps = {
   colorSet: string[];
@@ -108,6 +109,7 @@ const Palette = ({
               Redelegate to bottom 2/3 validators to unlock color
               <div className="ml-1 flex items-center justify-center">
                 <Image
+                  loader={loader}
                   alt="link"
                   src="/icons/link-deco-real-white.svg"
                   height={14}

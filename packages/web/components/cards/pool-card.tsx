@@ -25,7 +25,11 @@ export const PoolCard: FunctionComponent<
   const t = useTranslation();
 
   return (
-    <Link href={`/pool/${poolId}`} passHref prefetch={false}>
+    <Link
+      href={`https://app.osmosis.zone/pool/${poolId}`}
+      passHref
+      prefetch={false}
+    >
       <a
         className={classNames(
           "rounded-4xl p-[2px] text-left hover:bg-wosmongton-200",

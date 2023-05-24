@@ -1,6 +1,7 @@
 import { CoinPretty, RatePretty } from "@keplr-wallet/unit";
 import Image from "next/image";
 import { FunctionComponent } from "react";
+import loader from "../../loader";
 
 const PoolComposition: FunctionComponent<{
   assets: {
@@ -15,6 +16,7 @@ const PoolComposition: FunctionComponent<{
           {asset.currency.coinImageUrl && (
             <div className="mr-2 h-[20px] w-[20px]">
               <Image
+                loader={loader}
                 src={asset.currency.coinImageUrl}
                 width={20}
                 height={20}

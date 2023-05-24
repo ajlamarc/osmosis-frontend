@@ -7,6 +7,7 @@ import { useWindowSize } from "../../../../hooks";
 import { InputBox } from "../../../input";
 import { StepBase } from "./step-base";
 import { StepProps } from "./types";
+import loader from "../../../../loader";
 
 export const Step2AddLiquidity: FunctionComponent<StepProps> = observer(
   (props) => {
@@ -33,6 +34,7 @@ export const Step2AddLiquidity: FunctionComponent<StepProps> = observer(
                   {currency.coinImageUrl && (
                     <div className="flex h-14 w-14 items-center overflow-hidden md:h-7 md:w-7">
                       <Image
+                        loader={loader}
                         src={currency.coinImageUrl}
                         alt="token icon"
                         width={isMobile ? 30 : 44}

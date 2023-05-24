@@ -10,6 +10,7 @@ import { Slider } from "../../components/control";
 import { useStore } from "../../stores";
 import { Button } from "../buttons";
 import { CustomClasses } from "../types";
+import loader from "../../loader";
 
 export const RemoveLiquidity: FunctionComponent<
   {
@@ -41,7 +42,7 @@ export const RemoveLiquidity: FunctionComponent<
             })}
           </h5>
         </div>
-        <div className="flex flex-wrap place-content-around items-center gap-4 rounded-xl border border-osmoverse-600 py-2 px-3 text-osmoverse-300">
+        <div className="flex flex-wrap place-content-around items-center gap-4 rounded-xl border border-osmoverse-600 px-3 py-2 text-osmoverse-300">
           {removeLiquidityConfig.poolShareAssetsWithPercentage.map((asset) => (
             <div
               className="flex items-center gap-2"
@@ -49,6 +50,7 @@ export const RemoveLiquidity: FunctionComponent<
             >
               {asset.currency.coinImageUrl && (
                 <Image
+                  loader={loader}
                   alt="token icon"
                   src={asset.currency.coinImageUrl}
                   height={16}

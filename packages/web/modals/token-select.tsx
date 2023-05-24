@@ -10,6 +10,7 @@ import { SearchBox } from "../components/input";
 import { InputProps } from "../components/types";
 import { useStore } from "../stores";
 import { ModalBase, ModalBaseProps } from "./base";
+import loader from "../loader";
 
 /** Intended for mobile use only - full screen alternative to token select dropdown.
  *
@@ -84,6 +85,7 @@ export const TokenSelectModal: FunctionComponent<
                   {coinImageUrl && (
                     <div className="mr-4 h-8 w-8 rounded-full">
                       <Image
+                        loader={loader}
                         src={coinImageUrl}
                         alt="token icon"
                         width={32}

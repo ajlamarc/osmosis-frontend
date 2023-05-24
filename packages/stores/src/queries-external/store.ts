@@ -34,7 +34,7 @@ export class QueriesExternalStore {
     chainId: string,
     observableQueryGuage: ObservableQueryGauges,
     incentivizedPools: ObservableQueryIncentivizedPools,
-    webApiBaseUrl: string,
+    _webApiBaseUrl: string,
     feeMetricsBaseURL = IMPERATOR_HISTORICAL_DATA_BASEURL,
     poolRewardsBaseUrl = IMPERATOR_TX_REWARD_BASEURL
   ) {
@@ -63,7 +63,7 @@ export class QueriesExternalStore {
     );
     this.queryActiveGauges = new ObservableQueryActiveGauges(
       kvStore,
-      webApiBaseUrl,
+      "https://app.osmosis.zone",
       observableQueryGuage,
       incentivizedPools
     );
